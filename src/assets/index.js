@@ -7,21 +7,22 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+
+import java from "./tech/java.png";
+import python from "./tech/python.png";
+import cpp from "./tech/cpp.png";
+import tensorflow from "./tech/tensorflow.png";
+import opencv from "./tech/opencv.png";
+import azure from "./tech/azure.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
+import css from "./tech/css.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import nextJs from "./tech/nextJs.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import nodejs from "./tech/nodejs.png";
 
-import Freelancer from "./company/Freelancer.png";
+
 import DecisionPointAnalytics from "./company/DecisionPointAnalytics.png";
 import Elev8Solar from "./company/Elev8Solar.png";
 import Infosys from "./company/Infosys.png";
@@ -30,8 +31,6 @@ import Allsoft from "./company/Allsoft.png";
 
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import imageeditor from "./imageeditor.png";
 import eventbuzz from "./eventbuzz.png";
 import eazypark from "./eazypark.png";
@@ -46,27 +45,24 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
+  java,
   git,
   html,
   javascript,
   mongodb,
   nodejs,
   reactjs,
-  nextJs,
-  tailwind,
-  typescript,
-  threejs,
-  Freelancer,
+  azure,
+  cpp,
+  opencv,
+  python,
+  tensorflow,
   DecisionPointAnalytics,
   Elev8Solar,
   Infosys,
   Spotle,
   Allsoft,
   carrent,
-  jobit,
-  tripguide,
   imageeditor,
   eventbuzz,
   eazypark,

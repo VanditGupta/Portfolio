@@ -4,30 +4,27 @@ import {
   creator,
   web,
   javascript,
-  typescript,
+  opencv,
+  python,
   html,
   css,
   reactjs,
-  nextJs,
-  tailwind,
+  azure,
+  cpp,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
+  java,
   DecisionPointAnalytics,
   Elev8Solar,
   Infosys,
   Spotle,
   Allsoft,
-  Freelancer,
   carrent,
-  jobit,
-  tripguide,
   imageeditor,
   eventbuzz,
   eazypark,
-  threejs,
+  tensorflow,
 } from "../assets";
 
 export const navLinks = [
@@ -66,6 +63,34 @@ const services = [
 
 const technologies = [
   {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Cpp",
+    icon: cpp,
+  },
+  {
+    name: "TensorFlow",
+    icon: tensorflow,
+  },
+  {
+    name: "OpenCV",
+    icon: opencv,
+  },
+  {
+    name: "Azure",
+    icon: azure,
+  },
+  {
+    name: "Git",
+    icon: git,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -78,44 +103,16 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "MongoDB",
+    icon: mongodb,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Next JS",
-    icon: nextJs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
