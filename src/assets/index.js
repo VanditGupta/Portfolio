@@ -36,6 +36,7 @@ import eazypark from "./project/eazypark.png";
 import venkatesh from "./testimonials/venkatesh.png";
 import raj from "./testimonials/raj.png";
 
+import conversation from "./paper/conversation.png";
 
 export {
   logo,
@@ -68,4 +69,5 @@ export {
   eazypark,
   venkatesh,
   raj,
+  conversation,
 };
