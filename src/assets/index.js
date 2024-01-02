@@ -37,9 +37,14 @@ import venkatesh from "./testimonials/venkatesh.png";
 import raj from "./testimonials/raj.png";
 
 import conversation from "./paper/conversation.png";
+import youtube from "./paper/youtube.png";
+import accident from "./paper/accident.png";
 
 import vandit from "./paper/vandit.png";
 import chaitanya from "./paper/chaitanya.png";
+import akshit from "./paper/akshit.png";
+import deepak from "./paper/deepak.png";
+import ashish from "./paper/ashish.png";
 
 export {
   logo,
@@ -73,6 +78,11 @@ export {
   venkatesh,
   raj,
   conversation,
+  youtube,
+  accident,
   vandit,
   chaitanya,
+  akshit,
+  deepak,
+  ashish,
 };

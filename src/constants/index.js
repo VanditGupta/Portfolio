@@ -25,8 +25,13 @@ import {
   venkatesh,
   raj,
   conversation,
+  youtube,
+  accident,
   vandit,
   chaitanya,
+  akshit,
+  deepak,
+  ashish,
 } from "../assets";
 
 export const navLinks = [
@@ -160,34 +165,6 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "Vandit never stopped asking questions from the day he joined into the team, I have worked with him for a year where he shown tremendous ability to learn new skills. He was one of the core members in team, who was involved in successful implementation of re-engineering program in support of latest azure cloud offering. I highly recommend Vandit to any organisation.",
-    name: "Venkatesh AV",
-    designation: "Lead Data Engineer",
-    company: "The Open University",
-    image: venkatesh,
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "Vandit's passion, proficiency, and problem-solving skills make him a standout team member with a rare blend of technical prowess and interpersonal skills. At Open University, he's been pivotal in data solutions, displaying deep knowledge in data pipelines and ETL processes. His commitment to cooperation and continuous learning makes him an invaluable asset.",
-    name: "Raj Basu",
-    designation: "Data Engineering Lead",
-    company: "The Open University",
-    image: raj,
-  },
-];
-
-
 const projects = [
   {
     name: "Image Editor",
@@ -274,19 +251,35 @@ const research_papers = [
       color: "pink-text-gradient",
     },
   ],
-  image: eventbuzz,
+  image: youtube,
   source_code_link: "https://arxiv.org/abs/2211.11528",
   authors: [
     {
-      name: "Vandit Gupta",
+      name: "V. Gupta",
       image: vandit,
       linkedin: "https://www.linkedin.com/in/vandit-gupta/"
     },
     {
-      name: "Chaitanya Chadha",
+      name: "A. Diwan",
+      image: akshit,
+      linkedin: "https://www.linkedin.com/in/akshit-diwan/"
+    },
+    {
+      name: "C. Chadha",
       image: chaitanya,
       linkedin: "https://www.linkedin.com/in/chaitanyachadha12/"
     },
+    {
+      name: "Dr. A Khanna",
+      image: ashish,
+      linkedin: "https://www.linkedin.com/in/dr-ashish-khanna-2381b778/"
+    },
+    {
+      name: "Dr. D Gupta",
+      image: deepak,
+      linkedin: "https://www.linkedin.com/in/deepak-gupta-90156685/"
+    },
+
   ]
 },
   {
@@ -311,14 +304,24 @@ const research_papers = [
     source_code_link: "https://arxiv.org/abs/2211.08365",
     authors: [
       {
-        name: "Chaitanya Chadha",
+        name: "C. Chadha",
         image: chaitanya,
         linkedin: "https://www.linkedin.com/in/chaitanyachadha12/"
       },
       {
-        name: "Vandit Gupta",
+        name: "V. Gupta",
         image: vandit,
         linkedin: "https://www.linkedin.com/in/vandit-gupta/"
+      },
+      {
+        name: "Dr. D. Gupta",
+        image: deepak,
+        linkedin: "https://www.linkedin.com/in/deepak-gupta-90156685/"
+      },
+      {
+        name: "Dr. A. Khanna",
+        image: ashish,
+        linkedin: "https://www.linkedin.com/in/dr-ashish-khanna-2381b778/"
       },
     ]
   },
@@ -340,9 +343,14 @@ const research_papers = [
       color: "pink-text-gradient",
     },
   ],
-  image: eventbuzz,
+  image: accident,
   source_code_link: "http://ijmtst.com/volume7/issue01/15.IJMTST0612325.pdf",
   authors: [
+    {
+      name: "Akshit Diwan",
+      image: akshit,
+      linkedin: "https://www.linkedin.com/in/akshit-diwan/"
+    },
     {
       name: "Vandit Gupta",
       image: vandit,
@@ -356,6 +364,37 @@ const research_papers = [
   ]
 },
 ];
+
+const testimonials = [
+  {
+    testimonial:
+      "Vandit never stopped asking questions from the day he joined into the team, I have worked with him for a year where he shown tremendous ability to learn new skills. He was one of the core members in team, who was involved in successful implementation of re-engineering program in support of latest azure cloud offering. I highly recommend Vandit to any organisation.",
+    name: "Venkatesh AV",
+    designation: "Lead Data Engineer",
+    company: "The Open University",
+    image: venkatesh,
+    linkedin: "https://www.linkedin.com/in/venkatesh-av-74382946/"
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Chris Brown",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    linkedin: "https://www.linkedin.com/in/vandit-gupta/"
+  },
+  {
+    testimonial:
+      "Vandit's passion, proficiency, and problem-solving skills make him a standout team member with a rare blend of technical prowess and interpersonal skills. At Open University, he's been pivotal in data solutions, displaying deep knowledge in data pipelines and ETL processes. His commitment to cooperation and continuous learning makes him an invaluable asset.",
+    name: "Raj Basu",
+    designation: "Data Engineering Lead",
+    company: "The Open University",
+    image: raj,
+    linkedin: "https://www.linkedin.com/in/raj-basu-852bb114/"
+  },
+];
+
 
 // console.log(research_papers);
 
