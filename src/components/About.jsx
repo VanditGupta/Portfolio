@@ -47,13 +47,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Hello! As a full-stack developer, I'm well-versed in TypeScript,
-        JavaScript, and adept in frameworks like React, Node.js, Three.js, and
-        Next.js. My approach blends technical skill with a playful creativity,
-        ensuring each project is not just functional but also engaging. I excel
-        in turning complex ideas into intuitive, user-friendly solutions, and I
-        relish the chance to collaborate and bring innovative concepts to life.
-        Let’s connect and transform vision into a vibrant digital reality!
+        Hello there! I'm a dedicated Data Scientist deeply engaged with Cloud
+        and Big Data tech, particularly Microsoft Azure. My journey includes
+        leading teams and enhancing data management and analytics for Fortune
+        500 clients in education and public sectors as a Digital Specialist
+        Engineer at Infosys. Currently expanding my horizons with a Master of
+        Science in Computer Science at Northeastern University, I've dived into
+        Machine Learning, Data Analytics, and Computer Vision. My research has
+        led to four publications, focusing on text classification, predictive
+        analytics, and accident detection. I'm all about solving real-world
+        problems with image processing and computer vision, driven by a blend of
+        innovation and efficiency. Let's connect and explore how we can innovate
+        and revolutionize the digital landscape together!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
