@@ -24,10 +24,15 @@ import threejs from "./tech/threejs.svg";
 import Freelancer from "./company/Freelancer.png";
 import DecisionPointAnalytics from "./company/DecisionPointAnalytics.png";
 import Elev8Solar from "./company/Elev8Solar.png";
+import Infosys from "./company/Infosys.png";
+import Spotle from "./company/Spotle.png";
+import Allsoft from "./company/Allsoft.png";
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import imageeditor from "./imageeditor.png";
 
 export {
   logo,
@@ -54,7 +59,11 @@ export {
   Freelancer,
   DecisionPointAnalytics,
   Elev8Solar,
+  Infosys,
+  Spotle,
+  Allsoft,
   carrent,
   jobit,
   tripguide,
+  imageeditor,
 };

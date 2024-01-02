@@ -17,10 +17,14 @@ import {
   docker,
   DecisionPointAnalytics,
   Elev8Solar,
+  Infosys,
+  Spotle,
+  Allsoft,
   Freelancer,
   carrent,
   jobit,
   tripguide,
+  imageeditor,
   threejs,
 } from "../assets";
 
@@ -118,7 +122,7 @@ const experiences = [
     title: "Data Engineer",
     company_name: "Infosys Pvt. Ltd",
     company_url: "https://www.infosys.com/",
-    icon: DecisionPointAnalytics,
+    icon: Infosys,
     iconBg: "#E4E4E4",
     date: "Oct 2021 - Jun 2023",
     points: [
@@ -134,7 +138,7 @@ const experiences = [
     title: "Data Analyst Intern",
     company_name: "Spotle.ai",
     company_url: "https://spotle.ai/",
-    icon: Elev8Solar,
+    icon: Spotle,
     iconBg: "#E4E4E4",
     date: "Jan 2021 - Feb 2021",
     points: [
@@ -143,56 +147,55 @@ const experiences = [
     ],
   },
   {
-    title: "Allsoft Solutions Pvt. Ltd.",
-    company_name: "Shopify",
+    title: "Internship Trainee",
+    company_name: "Allsoft Solutions Pvt. Ltd.",
     company_url: "#",
-    icon: Freelancer,
+    icon: Allsoft,
     iconBg: "#E4E4E4",
-    date: "August 2020 - June 2021",
+    date: "May 2020 - Jul 2020",
     points: [
-      "Delivered and launched multiple web applications, such as e-commerce platforms and healthcare websites, leading to a remarkable revenue increase of over $5 million for clients",
-      "Led UI/UX design projects with tools like Figma, resulting in a significant boost in user engagement, a substantial uptick in user satisfaction, and a notable 30% increase in traffic",
+      "Collaborated in a team to drive development of a COVID-19 detection system by scanning chest X-rays, attaining an 89.4% accuracy through strategic utilization of (CNNs) and advanced Image Processing techniques",
     ],
   },
 ];
 
 const projects = [
   {
-    name: "Hubble",
+    name: "Image Editor",
     description:
-      "Hubble - RGM Capability Demonstration Tool is a dynamic web application developed for Decision Point Analytics. It exemplifies advanced data analytics in retail growth management, showcasing interactive data visualizations and predictive modeling. This tool highlights Decision Point's expertise in leveraging data for strategic retail insights, emphasizing user-friendly interfaces and actionable analytics. It serves as a practical demonstration of how Decision Point translates complex data into clear, impactful business strategies for retail growth and market analysis.",
+      "Developed a Java Image Processing application with Java Swing for the UI, applying OOD principles like MVC and Builder patterns to ensure maintainability. Version control facilitated team collaboration and code stability. The UI was designed for easy navigation, optimizing user experience, while JUnit ensured robust functionality. The Builder pattern was key to streamlining feature development, cutting implementation time by 70%.",
     tags: [
       {
-        name: "react",
+        name: "java",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "swing",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "junit",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://hubble-staging.decisionpoint.in/",
+    image: imageeditor,
+    source_code_link: "https://github.com/VanditGupta/ImageEditor",
   },
   {
-    name: "Covid Tracking Dashboard",
+    name: "EventBuzz",
     description:
-      "Web Application platform designed to provide real-time updates and data analysis related to the COVID-19 pandemic. It offers users access to current statistics, including infection rates, testing data, vaccination progress, and more. This website serves as a valuable resource for staying informed about the latest developments in the ongoing health crisis, with user-friendly features that make it easy to navigate and understand the pandemic's impact on a global and local scale.",
+      "Led the development of 'EventBuzz', a scalable event management platform that bolstered planning efficiency by 30% through real-time updates and automated CRUD operations. System reliability was improved by 25% with the integration of MySQL stored procedures and the application of Node.js. Comprehensive logging was also integrated, vastly expediting issue resolution and contributing to a 99.9% uptime. This strategic enhancement of the platform’s functionality ensured robust, seamless management of events, catering to dynamic user needs and facilitating efficient event coordination.",
     tags: [
       {
-        name: "react",
+        name: "mysql",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "react",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "node",
         color: "pink-text-gradient",
       },
     ],
