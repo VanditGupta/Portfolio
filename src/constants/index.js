@@ -255,31 +255,20 @@ const research_papers = [
   source_code_link: "https://arxiv.org/abs/2211.11528",
   authors: [
     {
-      name: "V. Gupta",
+      name: "Vandit Gupta",
       image: vandit,
       linkedin: "https://www.linkedin.com/in/vandit-gupta/"
     },
     {
-      name: "A. Diwan",
+      name: "Akshit Diwan",
       image: akshit,
       linkedin: "https://www.linkedin.com/in/akshit-diwan/"
     },
     {
-      name: "C. Chadha",
-      image: chaitanya,
-      linkedin: "https://www.linkedin.com/in/chaitanyachadha12/"
-    },
-    {
-      name: "Dr. A Khanna",
+      name: "Dr. Ashish Khanna",
       image: ashish,
       linkedin: "https://www.linkedin.com/in/dr-ashish-khanna-2381b778/"
     },
-    {
-      name: "Dr. D Gupta",
-      image: deepak,
-      linkedin: "https://www.linkedin.com/in/deepak-gupta-90156685/"
-    },
-
   ]
 },
   {
@@ -304,25 +293,20 @@ const research_papers = [
     source_code_link: "https://arxiv.org/abs/2211.08365",
     authors: [
       {
-        name: "C. Chadha",
+        name: "Chaitanya Chadha",
         image: chaitanya,
         linkedin: "https://www.linkedin.com/in/chaitanyachadha12/"
       },
       {
-        name: "V. Gupta",
+        name: "Vandit Gupta",
         image: vandit,
         linkedin: "https://www.linkedin.com/in/vandit-gupta/"
       },
       {
-        name: "Dr. D. Gupta",
+        name: "Dr. Deepak Gupta",
         image: deepak,
         linkedin: "https://www.linkedin.com/in/deepak-gupta-90156685/"
-      },
-      {
-        name: "Dr. A. Khanna",
-        image: ashish,
-        linkedin: "https://www.linkedin.com/in/dr-ashish-khanna-2381b778/"
-      },
+      }
     ]
   },
 {
