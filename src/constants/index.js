@@ -280,10 +280,12 @@ const research_papers = [
     {
       name: "Vandit Gupta",
       image: vandit,
+      linkedin: "https://www.linkedin.com/in/vandit-gupta/"
     },
     {
       name: "Chaitanya Chadha",
       image: chaitanya,
+      linkedin: "https://www.linkedin.com/in/chaitanyachadha12/"
     },
   ]
 },
@@ -311,10 +313,12 @@ const research_papers = [
       {
         name: "Chaitanya Chadha",
         image: chaitanya,
+        linkedin: "https://www.linkedin.com/in/chaitanyachadha12/"
       },
       {
         name: "Vandit Gupta",
         image: vandit,
+        linkedin: "https://www.linkedin.com/in/vandit-gupta/"
       },
     ]
   },
@@ -342,10 +346,12 @@ const research_papers = [
     {
       name: "Vandit Gupta",
       image: vandit,
+      linkedin: "https://www.linkedin.com/in/vandit-gupta/"
     },
     {
       name: "Chaitanya Chadha",
       image: chaitanya,
+      linkedin: "https://www.linkedin.com/in/chaitanyachadha12/"
     },
   ]
 },
