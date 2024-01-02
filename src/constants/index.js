@@ -25,6 +25,8 @@ import {
   jobit,
   tripguide,
   imageeditor,
+  eventbuzz,
+  eazypark,
   threejs,
 } from "../assets";
 
@@ -184,7 +186,7 @@ const projects = [
   {
     name: "EventBuzz",
     description:
-      "Led the development of 'EventBuzz', a scalable event management platform that bolstered planning efficiency by 30% through real-time updates and automated CRUD operations. System reliability was improved by 25% with the integration of MySQL stored procedures and the application of Node.js. Comprehensive logging was also integrated, vastly expediting issue resolution and contributing to a 99.9% uptime. This strategic enhancement of the platform’s functionality ensured robust, seamless management of events, catering to dynamic user needs and facilitating efficient event coordination.",
+      "Led the development of 'EventBuzz', a scalable event management platform that bolstered planning efficiency by 30% through real-time updates and automated CRUD operations. System reliability was improved by 25% with the integration of MySQL stored procedures and the application of Node.js. Comprehensive logging was also integrated, vastly expediting issue resolution and contributing to a 99.9% uptime. This enhancement ensured robust event management and efficient coordination, catering to dynamic needs.",
     tags: [
       {
         name: "mysql",
@@ -199,29 +201,29 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://covidtrackernitish.netlify.app/",
+    image: eventbuzz,
+    source_code_link: "https://github.com/VanditGupta/EventBuzz",
   },
   {
-    name: "College Management ERP",
+    name: "Eazy_Park",
     description:
-      "College Management ERP is a comprehensive digital solution tailored for educational institutions. It streamlines and automates various administrative tasks within colleges, including student enrollment, attendance tracking, course management, and financial administration. This platform simplifies complex processes, enhances communication among students, faculty, and administrators, and provides data-driven insights to optimize decision-making. It is a powerful tool for modernizing and efficiently managing all aspects of college operations in one centralized platform.",
+      "Led team Coding_Capitals3 to 2nd at Student Hackday 2019, Delhi, innovating a parking solution with Masked R-CNN and COCO dataset. Achieved 0.92 confidence in detecting 80 types, enhancing urban parking spot identification and accessibility. The project demonstrated deep learning expertise and commitment to efficiently addressing urban challenges, significantly contributing to smarter city solutions and improving daily life through advancements in object recognition and spatial analytics.",
     tags: [
       {
-        name: "php",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "ajax",
+        name: "tensorflow",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "flask",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/nitishahuja/CollegeManagementERP",
+    image: eazypark,
+    source_code_link: "https://github.com/VanditGupta/Eazy_Park",
   },
 ];
 

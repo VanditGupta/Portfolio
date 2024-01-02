@@ -33,6 +33,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import imageeditor from "./imageeditor.png";
+import eventbuzz from "./eventbuzz.png";
+import eazypark from "./eazypark.png";
 
 export {
   logo,
@@ -66,4 +68,6 @@ export {
   jobit,
   tripguide,
   imageeditor,
+  eventbuzz,
+  eazypark,
 };
