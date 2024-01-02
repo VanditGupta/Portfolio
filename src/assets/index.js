@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import logov2 from "./logo/logov2cropped.svg"; // This is the new logo
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -34,6 +35,7 @@ import eazypark from "./project/eazypark.png";
 
 export {
   logo,
+  logov2,
   backend,
   creator,
   mobile,
