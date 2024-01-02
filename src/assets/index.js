@@ -33,6 +33,10 @@ import imageeditor from "./project/imageeditor.png";
 import eventbuzz from "./project/eventbuzz.png";
 import eazypark from "./project/eazypark.png";
 
+import venkatesh from "./testimonials/venkatesh.png";
+import raj from "./testimonials/raj.png";
+
+
 export {
   logo,
   logov2,
@@ -62,4 +66,6 @@ export {
   imageeditor,
   eventbuzz,
   eazypark,
+  venkatesh,
+  raj,
 };

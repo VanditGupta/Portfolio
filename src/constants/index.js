@@ -13,6 +13,7 @@ import {
   cpp,
   nodejs,
   mongodb,
+  tensorflow,
   git,
   java,
   Infosys,
@@ -21,7 +22,8 @@ import {
   imageeditor,
   eventbuzz,
   eazypark,
-  tensorflow,
+  venkatesh,
+  raj,
 } from "../assets";
 
 export const navLinks = [
@@ -155,6 +157,34 @@ const experiences = [
   },
 ];
 
+const testimonials = [
+  {
+    testimonial:
+      "Vandit never stopped asking questions from the day he joined into the team, I have worked with him for a year where he shown tremendous ability to learn new skills. He was one of the core members in team, who was involved in successful implementation of re-engineering program in support of latest azure cloud offering. I highly recommend Vandit to any organisation.",
+    name: "Venkatesh AV",
+    designation: "Lead Data Engineer",
+    company: "The Open University",
+    image: venkatesh,
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Chris Brown",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "Vandit's passion, proficiency, and problem-solving skills make him a standout team member with a rare blend of technical prowess and interpersonal skills. At Open University, he's been pivotal in data solutions, displaying deep knowledge in data pipelines and ETL processes. His commitment to cooperation and continuous learning makes him an invaluable asset.",
+    name: "Raj Basu",
+    designation: "Data Engineering Lead",
+    company: "The Open University",
+    image: raj,
+  },
+];
+
+
 const projects = [
   {
     name: "Image Editor",
@@ -180,7 +210,7 @@ const projects = [
   {
     name: "EventBuzz",
     description:
-      "Led the development of 'EventBuzz', a scalable event management platform that bolstered planning efficiency by 30% through real-time updates and automated CRUD operations. System reliability was improved by 25% with the integration of MySQL stored procedures and the application of Node.js. Comprehensive logging was also integrated, vastly expediting issue resolution and contributing to a 99.9% uptime. This enhancement ensured robust event management and efficient coordination, catering to dynamic needs.",
+      "Led 'EventBuzz', enhancing planning by 30% with CRUD operations, and reliability by 25% using MySQL and Node.js. Integrated logging leading to 99.9% uptime. React was employed for a dynamic, user-friendly front end. The platform's advancements provided robust event management, ensuring smooth, efficient coordination to adapt to dynamic user needs.\n\n",
     tags: [
       {
         name: "mysql",
@@ -221,4 +251,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologies, experiences, testimonials, projects };
