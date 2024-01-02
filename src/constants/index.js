@@ -25,6 +25,8 @@ import {
   venkatesh,
   raj,
   conversation,
+  vandit,
+  chaitanya,
 } from "../assets";
 
 export const navLinks = [
@@ -254,6 +256,37 @@ const projects = [
 
 
 const research_papers = [
+{
+  name: "Machine Learning enabled models for YouTube Ranking Mechanism and Views Prediction",
+  description:
+    "Designed and implemented a predictive model using machine learning and AI to estimate YouTube video metrics, incorporating a ranking system based on trending data. Enhanced the model with a Random Forest algorithm, achieving a notable 78.4% accuracy, aiding creators in evaluating content authenticity and competitive strategy before publication",
+  tags: [
+    {
+      name: "analytics",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "tensorflow",
+      color: "green-text-gradient",
+    },
+    {
+      name: "youtube",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: eventbuzz,
+  source_code_link: "https://arxiv.org/abs/2211.11528",
+  authors: [
+    {
+      name: "Vandit Gupta",
+      image: vandit,
+    },
+    {
+      name: "Chaitanya Chadha",
+      image: chaitanya,
+    },
+  ]
+},
   {
     name: "Classifying text using machine learning models and determining conversation drift",
     description:
@@ -264,64 +297,60 @@ const research_papers = [
         color: "blue-text-gradient",
       },
       {
-        name: "tensorflow",
+        name: "nlp",
         color: "green-text-gradient",
       },
       {
-        name: "deep learning",
+        name: "deepLearning",
         color: "pink-text-gradient",
       },
     ],
     image: conversation,
     source_code_link: "https://arxiv.org/abs/2211.08365",
+    authors: [
+      {
+        name: "Chaitanya Chadha",
+        image: chaitanya,
+      },
+      {
+        name: "Vandit Gupta",
+        image: vandit,
+      },
+    ]
   },
-  {
-    name: "EventBuzz",
-    description:
-      "Led 'EventBuzz', enhancing planning by 30% with CRUD operations, and reliability by 25% using MySQL and Node.js. Integrated logging leading to 99.9% uptime. React was employed for a dynamic, user-friendly front end. The platform's advancements provided robust event management, ensuring smooth, efficient coordination to adapt to dynamic user needs.\n\n",
-    tags: [
-      {
-        name: "mysql",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react",
-        color: "green-text-gradient",
-      },
-      {
-        name: "node",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: eventbuzz,
-    source_code_link: "https://github.com/VanditGupta/EventBuzz",
-  },
-  {
-    name: "Eazy_Park",
-    description:
-      "Led team Coding_Capitals3 to 2nd at Student Hackday 2019, Delhi, innovating a parking solution with Masked R-CNN and COCO dataset. Achieved 0.92 confidence in detecting 80 types, enhancing urban parking spot identification and accessibility. The project demonstrated deep learning expertise and commitment to efficiently addressing urban challenges, significantly contributing to smarter city solutions and improving daily life through advancements in object recognition and spatial analytics.",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tensorflow",
-        color: "green-text-gradient",
-      },
-      {
-        name: "flask",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: eazypark,
-    source_code_link: "https://github.com/VanditGupta/Eazy_Park",
-  },
+{
+  name: "Accident Detection Using Mask R-CNN",
+  description:
+    "Designed and implemented a predictive model using machine learning and AI to estimate YouTube video metrics, incorporating a ranking system based on trending data. Enhanced the model with a Random Forest algorithm, achieving a notable 78.4% accuracy, aiding creators in evaluating content authenticity and competitive strategy before publication",
+  tags: [
+    {
+      name: "cnn",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "keras",
+      color: "green-text-gradient",
+    },
+    {
+      name: "objectDetection",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: eventbuzz,
+  source_code_link: "http://ijmtst.com/volume7/issue01/15.IJMTST0612325.pdf",
+  authors: [
+    {
+      name: "Vandit Gupta",
+      image: vandit,
+    },
+    {
+      name: "Chaitanya Chadha",
+      image: chaitanya,
+    },
+  ]
+},
 ];
 
-
-
-
-
+// console.log(research_papers);
 
 export { services, technologies, experiences, testimonials, projects, research_papers };

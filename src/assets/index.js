@@ -38,6 +38,9 @@ import raj from "./testimonials/raj.png";
 
 import conversation from "./paper/conversation.png";
 
+import vandit from "./paper/vandit.png";
+import chaitanya from "./paper/chaitanya.png";
+
 export {
   logo,
   logov2,
@@ -70,4 +73,6 @@ export {
   venkatesh,
   raj,
   conversation,
+  vandit,
+  chaitanya,
 };
