@@ -23,17 +23,14 @@ import reactjs from "./tech/reactjs.png";
 import nodejs from "./tech/nodejs.png";
 
 
-import DecisionPointAnalytics from "./company/DecisionPointAnalytics.png";
-import Elev8Solar from "./company/Elev8Solar.png";
 import Infosys from "./company/Infosys.png";
 import Spotle from "./company/Spotle.png";
 import Allsoft from "./company/Allsoft.png";
 
 
-import carrent from "./carrent.png";
-import imageeditor from "./imageeditor.png";
-import eventbuzz from "./eventbuzz.png";
-import eazypark from "./eazypark.png";
+import imageeditor from "./project/imageeditor.png";
+import eventbuzz from "./project/eventbuzz.png";
+import eazypark from "./project/eazypark.png";
 
 export {
   logo,
@@ -57,12 +54,9 @@ export {
   opencv,
   python,
   tensorflow,
-  DecisionPointAnalytics,
-  Elev8Solar,
   Infosys,
   Spotle,
   Allsoft,
-  carrent,
   imageeditor,
   eventbuzz,
   eazypark,
