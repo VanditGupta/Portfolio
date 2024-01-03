@@ -1,12 +1,13 @@
 import logo from "./logo/logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
 
+import backend from "./hologram/backend.png";
+import creator from "./hologram/creator.png";
+import mobile from "./hologram/mobile.png";
+import web from "./hologram/web.png";
+
+import github from "./util/github.png";
+import menu from "./util/menu.svg";
+import close from "./util/close.svg";
 
 import java from "./tech/java.png";
 import python from "./tech/python.png";
@@ -22,11 +23,9 @@ import mongodb from "./tech/mongodb.png";
 import reactjs from "./tech/reactjs.png";
 import nodejs from "./tech/nodejs.png";
 
-
 import Infosys from "./company/Infosys.png";
 import Spotle from "./company/Spotle.png";
 import Allsoft from "./company/Allsoft.png";
-
 
 import imageeditor from "./project/imageeditor.png";
 import eventbuzz from "./project/eventbuzz.png";
@@ -39,11 +38,11 @@ import conversation from "./paper/conversation.png";
 import youtube from "./paper/youtube.png";
 import accident from "./paper/accident.png";
 
-import vandit from "./paper/vandit.png";
-import chaitanya from "./paper/chaitanya.png";
-import akshit from "./paper/akshit.png";
-import deepak from "./paper/deepak.png";
-import ashish from "./paper/ashish.png";
+import vandit from "./paper/author/vandit.png";
+import chaitanya from "./paper/author/chaitanya.png";
+import akshit from "./paper/author/akshit.png";
+import deepak from "./paper/author/deepak.png";
+import ashish from "./paper/author/ashish.png";
 
 export {
   logo,
