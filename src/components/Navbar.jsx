@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -34,8 +34,8 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
+        <HashLink
+          to="/#home"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
@@ -50,7 +50,7 @@ const Navbar = () => {
             </span>
             {/* <span className="sm:block hidden">| Product Management&nbsp; </span> */}
           </p>
-        </Link>
+        </HashLink>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
@@ -61,7 +61,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <HashLink smooth to={`/#${nav.id}`}>{nav.title}</HashLink>
             </li>
           ))}
         </ul>
@@ -91,7 +91,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <HashLink smooth to={`/#${nav.id}`}>{nav.title}</HashLink>
                 </li>
               ))}
             </ul>
