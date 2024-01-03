@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import logov2 from "./logo/logov2cropped.svg"; // This is the new logo
+import logo from "./logo/logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -48,7 +47,6 @@ import ashish from "./paper/ashish.png";
 
 export {
   logo,
-  logov2,
   backend,
   creator,
   mobile,
