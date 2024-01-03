@@ -348,6 +348,45 @@ const research_papers = [
   },
 ];
 
+const achievements = [
+  {
+    title: "Rookie of the Quarter",
+    points: [
+      "Received the 'Rookie of the Quarter' award at Infosys for exceptional performance and significant contributions to project success, rapidly adapting and boosting team efficiency.",
+    ],
+  },
+  {
+    title: "Insta Award",
+    points: [
+      "Earned the 'Insta Award' at Infosys for mastering Azure tools like Data Factory, Data Lake, and Synapse Warehouse, excelling in project development, coordination, and timely delivery.",
+    ],
+  },
+  {
+    title: "ZS Campus Beats Challenge",
+    points: [
+      "Secured a spot in the Top 11-100 teams in the ZS Campus Beats Case Challenge 2020, earning an interview for Business Technology Analyst at ZS and advancing to Phase-3.",
+    ],
+  },
+  {
+    title: "Best Student in Computer Science",
+    points: [
+      "Honored as the best Computer Science student in 12th grade at NC Jindal Public School, recognizing my academic excellence and leadership in the field.",
+    ],
+  },
+  {
+    title: "Academic Excellence Awards",
+    points: [
+      "Received the Scholar's Badge and Certificate of Scholarship for outstanding academic achievements throughout 11th and 12th grade.",
+    ],
+  },
+  {
+    title: "Published Research",
+    points: [
+      "Published four impactful research papers in machine learning, including innovative works on text classification, YouTube ranking, COVID-19 detection, and accident identification using advanced deep learning techniques.",
+    ],
+  },
+];
+
 const testimonials = [
   {
     testimonial:
@@ -385,4 +424,5 @@ export {
   testimonials,
   projects,
   research_papers,
+  achievements,
 };

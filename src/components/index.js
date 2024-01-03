@@ -12,6 +12,7 @@ import Experience from "./Experience";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Research from "./Research";
+import Achievements from "./Achievements";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 
@@ -24,6 +25,7 @@ export {
   Works,
   Feedbacks,
   Research,
+  Achievements,
   Contact,
   CanvasLoader,
   EarthCanvas,
