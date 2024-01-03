@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -45,9 +45,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Vandit Gupta&nbsp;
-            <span className="sm:block hidden">
-                &nbsp;
-            </span>
+            <span className="sm:block hidden">&nbsp;</span>
             {/* <span className="sm:block hidden">| Product Management&nbsp; </span> */}
           </p>
         </HashLink>
@@ -61,7 +59,9 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <HashLink smooth to={`/#${nav.id}`}>{nav.title}</HashLink>
+              <HashLink smooth to={`/#${nav.id}`}>
+                {nav.title}
+              </HashLink>
             </li>
           ))}
         </ul>
@@ -91,7 +91,9 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <HashLink smooth to={`/#${nav.id}`}>{nav.title}</HashLink>
+                  <HashLink smooth to={`/#${nav.id}`}>
+                    {nav.title}
+                  </HashLink>
                 </li>
               ))}
             </ul>
