@@ -361,12 +361,12 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-    linkedin: "https://www.linkedin.com/in/vandit-gupta/"
+      "I wholeheartedly endorse Vandit Gupta for his outstanding academic and research contributions. His innovative approach, leadership in collaborative projects, and significant conference papers highlight his deep understanding of technology and research. Vandit's dedication and technical acumen make him an exemplary candidate for advanced endeavors.",
+    name: "Dr. Deepak Gupta",
+    designation: "Assistant Professor",
+    company: "Maharaja Agrasen Institute of Technology",
+    image: deepak,
+    linkedin: "https://www.linkedin.com/in/deepak-gupta-90156685/"
   },
   {
     testimonial:
