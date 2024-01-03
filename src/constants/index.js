@@ -190,7 +190,7 @@ const projects = [
   {
     name: "EventBuzz",
     description:
-      "Led 'EventBuzz', enhancing planning by 30% with CRUD operations, and reliability by 25% using MySQL and Node.js. Integrated logging leading to 99.9% uptime. React was employed for a dynamic, user-friendly front end. The platform's advancements provided robust event management, ensuring smooth, efficient coordination to adapt to dynamic user needs.\n\n",
+      "Led 'EventBuzz', significantly enhancing event planning efficiency by 30% through the implementation of CRUD operations, and improving reliability by 25% using MySQL and Node.js. Integrated advanced logging mechanisms, achieving a remarkable 99.9% uptime. Employed React for creating a dynamic, user-friendly front end, contributing to a robust and adaptive event management platform. These enhancements streamlined coordination and adapted to user needs.",
     tags: [
       {
         name: "mysql",
@@ -211,7 +211,7 @@ const projects = [
   {
     name: "Eazy_Park",
     description:
-      "Led team Coding_Capitals3 to 2nd at Student Hackday 2019, Delhi, innovating a parking solution with Masked R-CNN and COCO dataset. Achieved 0.92 confidence in detecting 80 types, enhancing urban parking spot identification and accessibility. The project demonstrated deep learning expertise and commitment to efficiently addressing urban challenges, significantly contributing to smarter city solutions and improving daily life through advancements in object recognition and spatial analytics.",
+      "Led team Coding_Capitals3 to 2nd at Student Hackday 2019, Delhi, innovating a parking solution with Masked R-CNN and COCO dataset. Achieved 0.92 confidence in detecting 80 types, enhancing urban parking spot identification and accessibility. The project demonstrated deep learning expertise and a commitment to addressing urban challenges, contributing to smarter city solutions and improving daily life with advancements in object recognition.",
     tags: [
       {
         name: "python",
@@ -231,50 +231,49 @@ const projects = [
   },
 ];
 
-
 const research_papers = [
-{
-  name: "Machine Learning enabled models for YouTube Ranking Mechanism and Views Prediction",
-  description:
-    "Designed and implemented a predictive model using machine learning and AI to estimate YouTube video metrics, incorporating a ranking system based on trending data. Enhanced the model with a Random Forest algorithm, achieving a notable 78.4% accuracy, aiding creators in evaluating content authenticity and competitive strategy before publication",
-  tags: [
-    {
-      name: "analytics",
-      color: "blue-text-gradient",
-    },
-    {
-      name: "tensorflow",
-      color: "green-text-gradient",
-    },
-    {
-      name: "youtube",
-      color: "pink-text-gradient",
-    },
-  ],
-  image: youtube,
-  source_code_link: "https://arxiv.org/abs/2211.11528",
-  authors: [
-    {
-      name: "Vandit Gupta",
-      image: vandit,
-      linkedin: "https://www.linkedin.com/in/vandit-gupta/"
-    },
-    {
-      name: "Akshit Diwan",
-      image: akshit,
-      linkedin: "https://www.linkedin.com/in/akshit-diwan/"
-    },
-    {
-      name: "Dr. Ashish Khanna",
-      image: ashish,
-      linkedin: "https://www.linkedin.com/in/dr-ashish-khanna-2381b778/"
-    },
-  ]
-},
+  {
+    name: "Machine Learning enabled models for YouTube Ranking Mechanism and Views Prediction",
+    description:
+      "Designed and implemented a predictive model using machine learning and AI to estimate YouTube video metrics, incorporating a ranking system based on trending data. Enhanced the model with a Random Forest algorithm, achieving a notable 78.4% accuracy, aiding creators in evaluating content authenticity and competitive strategy before publication",
+    tags: [
+      {
+        name: "analytics",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tensorflow",
+        color: "green-text-gradient",
+      },
+      {
+        name: "youtube",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: youtube,
+    source_code_link: "https://arxiv.org/abs/2211.11528",
+    authors: [
+      {
+        name: "Vandit Gupta",
+        image: vandit,
+        linkedin: "https://www.linkedin.com/in/vandit-gupta/",
+      },
+      {
+        name: "Akshit Diwan",
+        image: akshit,
+        linkedin: "https://www.linkedin.com/in/akshit-diwan/",
+      },
+      {
+        name: "Dr. Ashish Khanna",
+        image: ashish,
+        linkedin: "https://www.linkedin.com/in/dr-ashish-khanna-2381b778/",
+      },
+    ],
+  },
   {
     name: "Classifying text using machine learning models and determining conversation drift",
     description:
-      "Researched and applied Naive Bayes, Logistic Regression, and SVM algorithms for off-topic detection in text, optimizing the SVM to achieve a high F1 score of 0.81, advancing discussion moderation techniques",
+      "In this research, Naive Bayes, Logistic Regression, and SVM algorithms were optimized for off-topic text detection, achieving an F1 score of 0.81. This significantly advances discussion moderation techniques, enhancing accuracy and efficiency. The work contributes to better engagement in digital conversations and suggests further applications in language and moderation technology.",
     tags: [
       {
         name: "python",
@@ -295,69 +294,69 @@ const research_papers = [
       {
         name: "Chaitanya Chadha",
         image: chaitanya,
-        linkedin: "https://www.linkedin.com/in/chaitanyachadha12/"
+        linkedin: "https://www.linkedin.com/in/chaitanyachadha12/",
       },
       {
         name: "Vandit Gupta",
         image: vandit,
-        linkedin: "https://www.linkedin.com/in/vandit-gupta/"
+        linkedin: "https://www.linkedin.com/in/vandit-gupta/",
       },
       {
         name: "Dr. Deepak Gupta",
         image: deepak,
-        linkedin: "https://www.linkedin.com/in/deepak-gupta-90156685/"
-      }
-    ]
+        linkedin: "https://www.linkedin.com/in/deepak-gupta-90156685/",
+      },
+    ],
   },
-{
-  name: "Accident Detection Using Mask R-CNN",
-  description:
-    "Designed and implemented a predictive model using machine learning and AI to estimate YouTube video metrics, incorporating a ranking system based on trending data. Enhanced the model with a Random Forest algorithm, achieving a notable 78.4% accuracy, aiding creators in evaluating content authenticity and competitive strategy before publication",
-  tags: [
-    {
-      name: "cnn",
-      color: "blue-text-gradient",
-    },
-    {
-      name: "keras",
-      color: "green-text-gradient",
-    },
-    {
-      name: "objectDetection",
-      color: "pink-text-gradient",
-    },
-  ],
-  image: accident,
-  source_code_link: "http://ijmtst.com/volume7/issue01/15.IJMTST0612325.pdf",
-  authors: [
-    {
-      name: "Akshit Diwan",
-      image: akshit,
-      linkedin: "https://www.linkedin.com/in/akshit-diwan/"
-    },
-    {
-      name: "Vandit Gupta",
-      image: vandit,
-      linkedin: "https://www.linkedin.com/in/vandit-gupta/"
-    },
-    {
-      name: "Chaitanya Chadha",
-      image: chaitanya,
-      linkedin: "https://www.linkedin.com/in/chaitanyachadha12/"
-    },
-  ]
-},
+  {
+    name: "Accident Detection Using Mask R-CNN",
+    description:
+      "The paper presents the Mask R-CNN model as a viable, efficient tool for accident detection, utilizing deep learning for accurate instance segmentation. The model uses the Intersection over Union concept to precisely detect and identify accidents on roads. By effectively identifying mishaps, it aids in averting traffic jams and expediting emergency response, which could save lives and crucial time. The Mask R-CNN model's accuracy and potential to integrate with response systems mark significant advancements in traffic safety and management.",
+    tags: [
+      {
+        name: "cnn",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "keras",
+        color: "green-text-gradient",
+      },
+      {
+        name: "objectDetection",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: accident,
+    source_code_link: "http://ijmtst.com/volume7/issue01/15.IJMTST0612325.pdf",
+    authors: [
+      {
+        name: "Vandit Gupta",
+        image: vandit,
+        linkedin: "https://www.linkedin.com/in/vandit-gupta/",
+      },
+      {
+        name: "Akshit Diwan",
+        image: akshit,
+        linkedin: "https://www.linkedin.com/in/akshit-diwan/",
+      },
+      {
+        name: "Chaitanya Chadha",
+        image: chaitanya,
+        linkedin: "https://www.linkedin.com/in/chaitanyachadha12/",
+      },
+    ],
+  },
 ];
 
 const testimonials = [
   {
     testimonial:
-      "Vandit never stopped asking questions from the day he joined into the team, I have worked with him for a year where he shown tremendous ability to learn new skills. He was one of the core members in team, who was involved in successful implementation of re-engineering program in support of latest azure cloud offering. I highly recommend Vandit to any organisation.",
+      "Vandit never stopped asking questions from the day he joined the team. I have worked with him for a year where he has shown tremendous ability to learn new skills. He was one of the core members in the team, who was involved in the successful implementation of a re-engineering program in support of the latest azure cloud offering. I highly recommend Vandit to any organisation.",
     name: "Venkatesh AV",
     designation: "Lead Data Engineer",
     company: "The Open University",
     image: venkatesh,
-    linkedin: "https://www.linkedin.com/in/venkatesh-av-74382946/"
+    linkedin: "https://www.linkedin.com/in/venkatesh-av-74382946/",
   },
   {
     testimonial:
@@ -366,7 +365,7 @@ const testimonials = [
     designation: "Assistant Professor",
     company: "Maharaja Agrasen Institute of Technology",
     image: deepak,
-    linkedin: "https://www.linkedin.com/in/deepak-gupta-90156685/"
+    linkedin: "https://www.linkedin.com/in/deepak-gupta-90156685/",
   },
   {
     testimonial:
@@ -375,11 +374,15 @@ const testimonials = [
     designation: "Data Engineering Lead",
     company: "The Open University",
     image: raj,
-    linkedin: "https://www.linkedin.com/in/raj-basu-852bb114/"
+    linkedin: "https://www.linkedin.com/in/raj-basu-852bb114/",
   },
 ];
 
-
-// console.log(research_papers);
-
-export { services, technologies, experiences, testimonials, projects, research_papers };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  research_papers,
+};
