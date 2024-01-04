@@ -155,7 +155,7 @@ const experiences = [
   {
     title: "Internship Trainee",
     company_name: "Allsoft Solutions Pvt. Ltd.",
-    company_url: "#",
+    company_url: "https://www.allsoftsolutions.in/IBM/Main",
     icon: Allsoft,
     iconBg: "#E4E4E4",
     date: "May 2020 - Jul 2020",
