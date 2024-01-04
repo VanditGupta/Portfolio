@@ -1,9 +1,14 @@
+import React from "react";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { bio } from "../constants";
 
 const Hero = () => {
+  const roles = bio.map((b) => b.role);
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -18,11 +23,26 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hello, I'm <span className="text-[#915EFF]">Vandit</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Specializing in Computer Science, <br className="sm:block hidden" />
-            with a passion for Machine Learning, Big Data and modern web
-            technologies
-          </p>
+          <div
+            className={`${styles.heroSubText} mt-2 text-white-100 inline-block align-middle`}
+          >
+            I am a&nbsp;
+            <span className="text-[#915EFF] inline-block align-middle">
+              <Typewriter
+                options={{
+                  strings: roles,
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              Currently specializing in Computer Science,{" "}
+              <br className="sm:block hidden" />
+              with a passion for Machine Learning, Big Data,{" "}
+              <br className="sm:block hidden" /> and Computer Vision
+            </p>
+          </div>
         </div>
       </div>
 

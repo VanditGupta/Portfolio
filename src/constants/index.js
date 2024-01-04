@@ -76,6 +76,21 @@ const services = [
   },
 ];
 
+const bio = [
+  {
+    role: "Data Scientist",
+  },
+  {
+    role: "Data Engineer",
+  },
+  {
+    role: "Software Developer",
+  },
+  {
+    role: "Full Stack Developer",
+  },
+];
+
 const technologies = [
   {
     name: "Java",
@@ -427,6 +442,7 @@ const testimonials = [
 
 export {
   services,
+  bio,
   technologies,
   experiences,
   testimonials,
