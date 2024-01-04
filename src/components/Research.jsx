@@ -91,7 +91,7 @@ const ResearchCard = ({
 
 const Research = () => {
   return (
-    <>
+    <section id = "research">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Research</p>
         <h2 className={`${styles.sectionHeadText}`}>Papers</h2>
@@ -114,7 +114,7 @@ const Research = () => {
           <ResearchCard key={`paper-${index}`} index={index} {...paper} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

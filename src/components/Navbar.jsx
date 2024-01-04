@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -9,7 +9,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [dropdown, setDropdown] = useState(false); // State for the dropdown visibility
+  const [socialDropdownVisible, setSocialDropdownVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,13 +26,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleDropdown = () => {
-    setDropdown(!dropdown);
-  };
-
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"}`}
+      className={`${
+        styles.paddingX
+      } w-full flex items-center py-5 fixed top-0 z-20 ${
+        scrolled ? "bg-primary" : "bg-transparent"
+      }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <HashLink
@@ -51,25 +51,46 @@ const Navbar = () => {
 
         <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
           {navLinks.map((nav) => (
-            <li key={nav.id} className={`${active === nav.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}>
-              <HashLink smooth to={`/#${nav.id}`} onClick={() => setActive(nav.title)}>
+            <li
+              key={nav.id}
+              className={`${
+                active === nav.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+            >
+              <HashLink
+                smooth
+                to={`/#${nav.id}`}
+                onClick={() => setActive(nav.title)}
+              >
                 {nav.title}
               </HashLink>
             </li>
           ))}
+          {/* Social Dropdown */}
           <li className="relative">
-            <button onClick={toggleDropdown} className="text-white text-[18px] font-medium cursor-pointer">
-              Social
+            <button
+              onClick={() => setSocialDropdownVisible(!socialDropdownVisible)}
+              className="text-white text-[18px] font-medium cursor-pointer flex items-center"
+            >
+              Social <span className="ml-1">&#9662;</span>
             </button>
-            {dropdown && (
+            {socialDropdownVisible && (
               <ul className="absolute top-full mt-2 w-40 rounded-lg shadow-lg bg-primary py-2">
                 <li className="text-white font-medium cursor-pointer hover:text-secondary px-4 py-2">
-                  <a href="https://www.linkedin.com/in/vandit-gupta/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.linkedin.com/in/vandit-gupta/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     LinkedIn
                   </a>
                 </li>
                 <li className="text-white font-medium cursor-pointer hover:text-secondary px-4 py-2">
-                  <a href="https://github.com/VanditGupta" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://github.com/VanditGupta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     GitHub
                   </a>
                 </li>
@@ -87,25 +108,25 @@ const Navbar = () => {
           />
 
           {toggle && (
-            <ul className="absolute top-full right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl black-gradient p-6 flex flex-col items-end gap-4">
+            <div className="absolute top-full right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl black-gradient p-6 flex flex-col items-end gap-4">
               {navLinks.map((nav) => (
-                <li key={nav.id} className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"}`}>
-                  <HashLink smooth to={`/#${nav.id}`} onClick={() => { setToggle(false); setActive(nav.title); }}>
+                <li
+                  key={nav.id}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] text-secondary`}
+                >
+                  <HashLink
+                    smooth
+                    to={`/#${nav.id}`}
+                    onClick={() => {
+                      setToggle(false);
+                      setActive(nav.title);
+                    }}
+                  >
                     {nav.title}
                   </HashLink>
                 </li>
               ))}
-              <li className="font-poppins font-medium cursor-pointer text-[16px] text-secondary">
-                <a href="https://www.linkedin.com/in/vandit-gupta/" target="_blank" rel="noopener noreferrer">
-                  LinkedIn
-                </a>
-              </li>
-              <li className="font-poppins font-medium cursor-pointer text-[16px] text-secondary">
-                <a href="https://github.com/VanditGupta" target="_blank" rel="noopener noreferrer">
-                  GitHub
-                </a>
-              </li>
-            </ul>
+            </div>
           )}
         </div>
       </div>
