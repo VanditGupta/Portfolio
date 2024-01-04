@@ -91,7 +91,12 @@ const ResearchCard = ({
 
 const Research = () => {
   return (
-    <section id = "research">
+    <section>
+      {/* Invisible anchor element right before the heading */}
+      <div
+        id="research"
+        style={{ position: "relative", top: "-100px", visibility: "hidden" }}
+      ></div>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Research</p>
         <h2 className={`${styles.sectionHeadText}`}>Papers</h2>

@@ -69,7 +69,12 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <section id = "projects">
+    <section>
+      {/* Invisible anchor element right before the heading */}
+      <div
+        id="projects"
+        style={{ position: "relative", top: "-100px", visibility: "hidden" }}
+      ></div>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>

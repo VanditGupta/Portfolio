@@ -37,7 +37,12 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <section id="about">
+    <section>
+      {/* Invisible anchor element right before the heading */}
+      <div
+        id="about"
+        style={{ position: "relative", top: "-100px", visibility: "hidden" }}
+      ></div>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
