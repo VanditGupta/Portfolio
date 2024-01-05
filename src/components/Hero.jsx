@@ -39,8 +39,8 @@ const Hero = () => {
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
               Currently specializing in Computer Science,{" "}
               <br className="sm:block hidden" />
-              with a passion for Machine Learning, Big Data,{" "}
-              <br className="sm:block hidden" /> and Computer Vision
+              with a passion for Machine Learning and Computer Vision{" "}
+              {/* <br className="sm:block hidden" /> and Computer Vision */}
             </p>
           </div>
         </div>
