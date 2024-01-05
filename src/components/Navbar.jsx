@@ -126,6 +126,24 @@ const Navbar = () => {
                   </HashLink>
                 </li>
               ))}
+              <li className="font-poppins font-medium cursor-pointer text-[16px] text-secondary">
+                <a
+                  href="https://www.linkedin.com/in/vandit-gupta/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li className="font-poppins font-medium cursor-pointer text-[16px] text-secondary">
+                <a
+                  href="https://github.com/VanditGupta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </li>
             </div>
           )}
         </div>
