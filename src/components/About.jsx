@@ -73,7 +73,7 @@ const About = () => {
             className="rounded-full w-48 h-48 object-cover"
           />
           <a
-            href="https://drive.google.com/file/d/1VcGc_d-gn7LGlk2ZgkFNuaYpByvuU8fc/view?usp=sharing"
+            href="https://drive.google.com/file/d/1s-1AhsVnaqtKgLCxNUAr1RIy_FgbrGpO/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 bg-purple-500 text-white py-2 px-4 rounded-full text-center transition duration-300 ease-in-out hover:bg-purple-700"
