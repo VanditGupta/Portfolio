@@ -158,8 +158,7 @@ const experiences = [
       `Led a team of 8 members to build highly efficient Azure Data Factory (ADF) pipelines, resulting in a 50% improvement in data
       extraction speed from diverse external sources and streamlining the data ingestion process`,
       "Transformed client's codebase from USQL to TSQL using Power Automate, optimizing query execution time by 40%, and saving 150+ man-hours monthly in data processing",
-      "Upgraded storage mechanism for a UK-based client from Gen1 storage to Gen2 storage, boosting data access speed by 30% and ensuring more robust data management capabilities",
-      "Enhanced data processing by 40% with efficient PySpark and TSQL scripts for Change Data Capture (CDC)",
+      "Boosted data access speed by 30%, enhanced robust data management capabilities, and improved data processing by 40% through efficient PySpark and TSQL scripts for Change Data Capture (CDC)",
       "Streamlined code deployment process for test environment, resulting in a 20% reduction in testing cycle time and a 15% decrease in post-deployment issues, leading to significant time and resource savings for the team",
     ],
   },
