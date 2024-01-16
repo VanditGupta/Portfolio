@@ -45,6 +45,10 @@ import akshit from "./paper/author/akshit.png";
 import deepak from "./paper/author/deepak.png";
 import ashish from "./paper/author/ashish.png";
 
+import githubLogo from "../assets/tech/github.png";
+import linkedinLogo from "../assets/tech/linkedin.png";
+import mediumLogo  from "../assets/tech/medium.png";
+
 export {
   logo,
   profileImage,
@@ -84,4 +88,7 @@ export {
   akshit,
   deepak,
   ashish,
+  githubLogo,
+  linkedinLogo,
+  mediumLogo,
 };
