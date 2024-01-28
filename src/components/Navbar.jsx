@@ -94,6 +94,15 @@ const Navbar = () => {
                     GitHub
                   </a>
                 </li>
+                <li className="text-white font-medium cursor-pointer hover:text-secondary px-4 py-2">
+                  <a
+                    href="https://medium.com/@vanditgupta22"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Medium
+                  </a>
+                </li>
               </ul>
             )}
           </li>
@@ -142,6 +151,15 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                 >
                   GitHub
+                </a>
+              </li>
+              <li className="font-poppins font-medium cursor-pointer text-[16px] text-secondary">
+                <a
+                  href="https://medium.com/@vanditgupta22"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Medium
                 </a>
               </li>
             </div>
