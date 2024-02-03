@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, githubLogo, linkedinLogo, mediumLogo } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [socialDropdownVisible, setSocialDropdownVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,45 +64,34 @@ const Navbar = () => {
               </HashLink>
             </li>
           ))}
-          {/* Social Dropdown */}
-          <li className="relative">
-            <button
-              onClick={() => setSocialDropdownVisible(!socialDropdownVisible)}
-              className="text-white text-[18px] font-medium cursor-pointer flex items-center"
+          {/* Updated Social Icons */}
+          <li className="text-secondary">|</li>
+          <li className="flex items-center gap-1">
+            <a
+              href="https://www.linkedin.com/in/vandit-gupta/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Social <span className="ml-1">&#9662;</span>
-            </button>
-            {socialDropdownVisible && (
-              <ul className="absolute top-full mt-2 w-40 rounded-lg shadow-lg bg-primary py-2">
-                <li className="text-white font-medium cursor-pointer hover:text-secondary px-4 py-2">
-                  <a
-                    href="https://www.linkedin.com/in/vandit-gupta/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-                <li className="text-white font-medium cursor-pointer hover:text-secondary px-4 py-2">
-                  <a
-                    href="https://github.com/VanditGupta"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </li>
-                <li className="text-white font-medium cursor-pointer hover:text-secondary px-4 py-2">
-                  <a
-                    href="https://medium.com/@vanditgupta22"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Medium
-                  </a>
-                </li>
-              </ul>
-            )}
+              <img src={linkedinLogo} alt="LinkedIn" className="h-6 w-6" />
+            </a>
+          </li>
+          <li className="flex items-center gap-1">
+            <a
+              href="https://github.com/VanditGupta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={githubLogo} alt="GitHub" className="h-6 w-6" />
+            </a>
+          </li>
+          <li className="flex items-center gap-1">
+            <a
+              href="https://medium.com/@vanditgupta22"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={mediumLogo} alt="Medium" className="h-6 w-6" />
+            </a>
           </li>
         </ul>
 
