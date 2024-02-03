@@ -4,9 +4,11 @@ Welcome to my portfolio website repository! This website showcases my experience
 
 ## Table of Contents
 
-- [About Me](#about-me)
-- [Contact](#contact)
-- [License](#license)
+- [Portfolio Website](#portfolio-website)
+  - [Table of Contents](#table-of-contents)
+  - [About Me](#about-me)
+  - [Contact](#contact)
+  - [License](#license)
 
 ## About Me
 
@@ -21,6 +23,7 @@ You can reach out to me through the following channels:
 - Email: [vanditgupta22@gmail.com](mailto:vanditgupta22@gmail.com)
 - LinkedIn: [vandit-gupta](https://www.linkedin.com/in/vandit-gupta/)
 - GitHub: [VanditGupta](https://github.com/VanditGupta)
+- Medium: [@vanditgupta22](https://medium.com/@vanditgupta22)
 
 Feel free to connect with me for collaborations, opportunities, or just to say hello!
 
