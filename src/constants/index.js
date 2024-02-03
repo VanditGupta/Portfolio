@@ -155,11 +155,10 @@ const experiences = [
     iconBg: "#E4E4E4",
     date: "Oct 2021 - Jun 2023",
     points: [
-      `Led a team of 8 members to build highly efficient Azure Data Factory (ADF) pipelines, resulting in a 50% improvement in data
-      extraction speed from diverse external sources and streamlining the data ingestion process`,
-      "Transformed client's codebase from USQL to TSQL using Power Automate, optimizing query execution time by 40%, and saving 150+ man-hours monthly in data processing",
+      "Managed a team of 8 members to build highly efficient ETL pipelines, resulting in a 50% improvement in data extraction speed from diverse external sources and streamlining the data ingestion process",
+      "Transformed client's codebase from USQL to TSQL using Power Automate, optimizing query execution time by 40%, and saving 150+ man-hours monthly in data processing. Infrastructure upgrades were also implemented to boost efficiency and reliability",
       "Boosted data access speed by 30%, enhanced robust data management capabilities, and improved data processing by 40% through efficient PySpark and TSQL scripts for Change Data Capture (CDC)",
-      "Streamlined code deployment process for test environment, resulting in a 20% reduction in testing cycle time and a 15% decrease in post-deployment issues, leading to significant time and resource savings for the team",
+      "Streamlined the code deployment pipeline in test environments using Shell scripting, integrated with CI/CD processes, leading to a 20% reduction in testing time and 15% decrease in post-deployment issues",
     ],
   },
   {
@@ -170,19 +169,20 @@ const experiences = [
     iconBg: "#E4E4E4",
     date: "Jan 2021 - Feb 2021",
     points: [
-      "Played a pivotal role in the data analytics team, developing a Twitter Trend Analyzer which processed over 100,000 tweets using Python, NLTK, Matplotlib, and WordCloud, achieving an accuracy of 83%",
-      "Employed Natural Language Processing and advanced text-processing techniques on COVID-19 datasets to uncover and interpret diverse trends, gaining critical insights into public sentiment and information spread",
+      "Played a pivotal role in the data analysis team, engineering a data scraping and analysis system that processed over 250,000 tweets from Twitter using Python, enhancing data-driven decision-making",
+      "Developed and implemented a sentiment analysis REST API using Flask and Word2Vec, integrated into the company's chatbot on AWS SageMaker, resulting in a 40% increase in user engagement and response accuracy",
     ],
   },
   {
-    title: "Internship Trainee",
+    title: "Artificial Intelligence Intern",
     company_name: "Allsoft Solutions Pvt. Ltd.",
     company_url: "https://www.allsoftsolutions.in/IBM/Main",
     icon: Allsoft,
     iconBg: "#E4E4E4",
     date: "May 2020 - Jul 2020",
     points: [
-      "Collaborated in a team to drive development of a COVID-19 detection system by scanning chest X-rays, attaining an 89.4% accuracy through strategic utilization of (CNNs) and advanced Image Processing techniques",
+      "Collaborated in a team to develop a COVID-19 detection system leveraging chest X-ray imaging",
+      "	Achieved an 89.4% accuracy rate through strategic use of CNNs and advanced image processing techniques",
     ],
   },
 ];
