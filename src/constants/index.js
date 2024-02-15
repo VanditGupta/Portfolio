@@ -155,10 +155,10 @@ const experiences = [
     iconBg: "#E4E4E4",
     date: "Oct 2021 - Jun 2023",
     points: [
-      "Managed a team of 8 members to build highly efficient ETL pipelines, resulting in a 50% improvement in data extraction speed from diverse external sources and streamlining the data ingestion process",
-      "Transformed client's codebase from USQL to TSQL using Power Automate, optimizing query execution time by 40%, and saving 150+ man-hours monthly in data processing. Infrastructure upgrades were also implemented to boost efficiency and reliability",
-      "Boosted data access speed by 30%, enhanced robust data management capabilities, and improved data processing by 40% through efficient PySpark and TSQL scripts for Change Data Capture (CDC)",
-      "Streamlined the code deployment pipeline in test environments using Shell scripting, integrated with CI/CD processes, leading to a 20% reduction in testing time and 15% decrease in post-deployment issues",
+      "Managed an 8-member cross-functional team to build highly efficient Azure ADF ETL pipelines, resulting in a 50% improvement in data extraction speed from diverse external sources and streamlining the data ingestion process",
+      "Transformed client's codebase from USQL to TSQL using Azure SQL, optimizing query execution time by 40%, and saving 150+ man-hours monthly in data processing. Infrastructure upgrades also implemented to boost efficiency and reliability",
+      "Boosted data access speed by 30% from Azure Gen2 data lake storage for users and increased data processing by 40% using efficient PySpark and TSQL scripts for Change Data Capture (CDC), tailored for real-time streaming data",
+      "Streamlined code deployment with Agile methodologies, Shell scripting, Git for version-control, and Azure DevOps CI/CD integration, resulting in a 20% testing time reduction and a 15% decrease in post-deployment issues",
     ],
   },
   {
@@ -169,8 +169,10 @@ const experiences = [
     iconBg: "#E4E4E4",
     date: "Jan 2021 - Feb 2021",
     points: [
-      "Played a pivotal role in the data analysis team, engineering a data scraping and analysis system that processed over 250,000 tweets from Twitter using Python, enhancing data-driven decision-making",
-      "Developed and implemented a sentiment analysis REST API using Flask and Word2Vec, integrated into the company's chatbot on AWS SageMaker, resulting in a 40% increase in user engagement and response accuracy",
+      "Performed Exploratory Data Analysis (EDA) and feature engineering on clickstream data using NumPy, Pandas, and Scikit-Learn, optimizing analysis with AWS Redshift for enhanced performance and data accessibility",
+      "Increased quarterly revenue by 10% and user engagement by delivering KPI-focused Tableau dashboards, written reports, and marketing insights to stakeholders, accelerating data-driven decision making for student content optimization",
+      "Streamlined user and student data processing by utilizing AWS Glue and S3 bucket, achieving a 23% reduction in ETL processing time, resulting in enhanced scalability, efficiency, and cloud cost savings",
+      "Implemented task coordination using Agile project management tools like Slack and JIRA for organized project tracking",
     ],
   },
   {
@@ -181,8 +183,9 @@ const experiences = [
     iconBg: "#E4E4E4",
     date: "May 2020 - Jul 2020",
     points: [
-      "Collaborated in a team to develop a COVID-19 detection system leveraging chest X-ray imaging",
-      "	Achieved an 89.4% accuracy rate through strategic use of CNNs and advanced image processing techniques",
+      "Enhanced user engagement and communication response accuracy by 40% through the development and implementation of a sentiment analysis REST API using Flask and Word2Vec, seamlessly integrated into the platform's chatbot",
+      "Refined Allsoft's recommendation engine, achieving a 15% boost in user engagement, by utilizing collaborative filtering and recommender algorithms to improve course recommendations for students",
+      "Implemented Docker containerization and Kubernetes orchestration for recommender system model, enhancing deployment reliability, system scalability, and efficient resource management for streamlined application deployment",
     ],
   },
 ];
