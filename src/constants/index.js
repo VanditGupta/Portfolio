@@ -183,8 +183,8 @@ const experiences = [
     iconBg: "#E4E4E4",
     date: "May 2020 - Jul 2020",
     points: [
-      "Enhanced user engagement and communication response accuracy by 40% through the development and implementation of a sentiment analysis REST API using Flask and Word2Vec, seamlessly integrated into the platform's chatbot",
-      "Refined Allsoft's recommendation engine, achieving a 15% boost in user engagement, by utilizing collaborative filtering and recommender algorithms to improve course recommendations for students",
+      "Enhanced user engagement and response accuracy by 40% through the development and implementation of a sentiment analysis REST API using Flask and Word2Vec, seamlessly integrated into the client's platform's chatbot",
+      "Refined the client’s recommendation engine, achieving a 15% boost in user engagement, by utilizing collaborative filtering and recommender algorithms to improve product recommendations for customers",
       "Implemented Docker containerization and Kubernetes orchestration for recommender system model, enhancing deployment reliability, system scalability, and efficient resource management for streamlined application deployment",
     ],
   },
