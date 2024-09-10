@@ -177,15 +177,14 @@ const experiences = [
   },
   {
     title: "Artificial Intelligence Intern",
-    company_name: "Allsoft Solutions Pvt. Ltd.",
-    company_url: "https://www.allsoftsolutions.in/IBM/Main",
+    company_name: "Allsoft",
+    company_url: "https://allsoft.co/",
     icon: Allsoft,
     iconBg: "#E4E4E4",
     date: "May 2020 - Jul 2020",
     points: [
-      "Enhanced user engagement and response accuracy by 40% through the development and implementation of a sentiment analysis REST API using Flask and Word2Vec, seamlessly integrated into the client's platform's chatbot",
-      "Refined the client’s recommendation engine, achieving a 15% boost in user engagement, by utilizing collaborative filtering and recommender algorithms to improve product recommendations for customers",
-      "Implemented Docker containerization and Kubernetes orchestration for recommender system model, enhancing deployment reliability, system scalability, and efficient resource management for streamlined application deployment",
+      "Enhanced user engagement and response accuracy by 40% by developing and implementing a sentiment analysis REST API using Flask and a Bi-LSTM model, seamlessly integrated into the client's platform's chatbot",
+      "Refined the client’s recommendation engine, achieving a 15% boost in user engagement, by utilizing item-based collaborative filtering to improve product recommendations for customers",
     ],
   },
 ];
