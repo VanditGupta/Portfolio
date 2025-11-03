@@ -155,10 +155,10 @@ const experiences = [
     iconBg: "#E4E4E4",
     date: "Oct 2021 - Jun 2023",
     points: [
-      "Managed an 8-member cross-functional team to build highly efficient Azure ADF ETL pipelines, resulting in a 50% improvement in data extraction speed from diverse external sources and streamlining the data ingestion process",
-      "Transformed client's codebase from USQL to TSQL using Azure SQL, optimizing query execution time by 40%, and saving 150+ man-hours monthly in data processing. Infrastructure upgrades also implemented to boost efficiency and reliability",
-      "Boosted data access speed by 30% from Azure Gen2 data lake storage for users and increased data processing by 40% using efficient PySpark and TSQL scripts for Change Data Capture (CDC), tailored for real-time streaming data",
-      "Streamlined code deployment with Agile methodologies, Shell scripting, Git for version-control, and Azure DevOps CI/CD integration, resulting in a 20% testing time reduction and a 15% decrease in post-deployment issues",
+      "Led a 8-member cross-functional team to build end-to-end ETL/ELT pipelines, automating raw data collection and ingestion from 30+ sources like (SAP, Postgres) into a Synapse data warehouse using Azure Data Factory and Blob Storage",
+      "Met 10-minute SLA for 100GB+ Data Lake tables by orchestrating batch workflows with T-SQL and Apache PySpark on SQL Server and Databricks, applying advanced query optimization techniques (indexing, partitioning, CTEs, window functions)",
+      "Enabled university stakeholders to make data-driven decisions by building Excel and Power BI (DAX) dashboards with SQL queries supporting real-time self-service data analytics, ad-hoc reporting, KPIs tracking, and narrative insights",
+      "Established enterprise-wide data governance with Microsoft Purview, enabling metadata management, GDPR-compliant RBAC, lineage tracking, and SharePoint documentation for stakeholder management and cross-functional collaboration",
     ],
   },
   {
