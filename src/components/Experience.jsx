@@ -7,16 +7,16 @@ import { spotlightProps } from "../utils/spotlight";
 import Reveal, { ease } from "./Reveal";
 import Section from "./Section";
 
-// Logos sit on a white tile so they read in both themes; wordmarks get a wider tile.
-const Logo = ({ src, name, wide }) => (
+// Logos sit on a white tile by default; wordmarks get a wider tile, and logos
+// designed for dark backgrounds (like Force Factor) set their own tile colour.
+const Logo = ({ src, name, wide, bg }) => (
   <img
     src={src}
     alt=""
     aria-hidden="true"
     title={name}
-    className={`h-11 shrink-0 rounded-xl border border-line bg-white object-contain ${
-      wide ? "w-28 px-2 py-1.5" : "w-11 p-1"
-    }`}
+    style={{ backgroundColor: bg || "#fff" }}
+    className={`h-11 shrink-0 rounded-xl border border-line object-contain ${wide ? "w-28 px-2 py-1.5" : "w-11 p-1"}`}
   />
 );
 
@@ -32,7 +32,7 @@ const Role = ({ job }) => (
 
     <div className="md:col-span-9">
       <div className="flex items-center gap-4">
-        <Logo src={job.logo} name={job.company} wide={job.wideLogo} />
+        <Logo src={job.logo} name={job.company} wide={job.wideLogo} bg={job.logoBg} />
         <div>
           <h3 className="text-2xl leading-tight md:text-3xl">{job.role}</h3>
           <a
@@ -50,23 +50,7 @@ const Role = ({ job }) => (
         </div>
       </div>
 
-      <ul className="mt-6 space-y-3">
-        {job.points.map((point) => (
-          <li key={point} className="relative pl-5 leading-relaxed text-muted before:absolute before:left-0 before:top-[0.7em] before:h-px before:w-3 before:bg-accent">
-            {point}
-          </li>
-        ))}
-      </ul>
-
-      {job.tags && (
-        <ul className="mt-6 flex flex-wrap gap-2">
-          {job.tags.map((tag) => (
-            <li key={tag} className="chip">
-              {tag}
-            </li>
-          ))}
-        </ul>
-      )}
+      <p className="mt-5 max-w-2xl leading-relaxed text-muted">{job.summary}</p>
     </div>
   </article>
 );

@@ -1,6 +1,6 @@
 import NewYorkLife from "../assets/company/NewYorkLife.svg";
 import Northeastern from "../assets/company/Northeastern.png";
-import ForceFactor from "../assets/company/ForceFactor.png";
+import ForceFactor from "../assets/company/ForceFactor.svg";
 import DataNutts from "../assets/company/DataNutts.png";
 import Infosys from "../assets/company/Infosys.png";
 import Spotle from "../assets/company/Spotle.png";
@@ -64,11 +64,8 @@ export const experiences = [
     role: "Full Stack AI Engineer",
     period: "Dec 2025 – Present",
     location: "New York City, NY",
-    points: [
-      "Led a team of 6 to build AI-powered search for 18,000+ agents, replacing a $3M+/year lexical system and indexing 70K+ files across 11 sources with Amazon Kendra and Bedrock",
-      "Cut agent feedback turnaround from 2 weeks to seconds with a voice AI coaching platform for 30,000+ users, deployed on EKS with Terraform and Harness CI/CD",
-      "Built the AWS backend for an agentic AI platform unifying 5+ services, streaming responses with first-byte latency under 1.5s using Redis Valkey",
-    ],
+    summary:
+      "I build AI tools for the agent force: an enterprise RAG search that replaced a legacy lexical system, a voice coaching platform, and the AWS backend behind an agentic AI platform. The work spans LLM pipelines, infrastructure as code and keeping everything fast.",
   },
   {
     company: "Northeastern University · DASH",
@@ -77,23 +74,20 @@ export const experiences = [
     role: "Gen AI Engineer · Research Assistant",
     period: "Oct 2024 – Dec 2025",
     location: "Boston, MA",
-    points: [
-      "Led a team of 3 to cut grading time from 7 days to 20 minutes for 500+ students with an AI grading bot built on LangChain and GPT-4o",
-      "Led AI red-teaming of two production bots, running 30+ prompt injection attacks to find guardrail weaknesses",
-    ],
+    summary:
+      "Built AI tooling for the business school, including an automated grading bot, rubric generation and a privacy-safe data pipeline. Also red-teamed production bots for prompt injection.",
   },
   {
     company: "Force Factor",
     url: "https://www.forcefactor.com/",
     logo: ForceFactor,
     wideLogo: true,
+    logoBg: "#111317",
     role: "AI Engineer",
     period: "Jan 2025 – Apr 2025",
     location: "Boston, MA",
-    points: [
-      "Reduced inventory costs by $5M+ yearly by automating demand planning for 700+ SKUs with fine-tuned TimeGPT on AWS",
-      "Saved 500+ man-hours yearly with a FastAPI and React app that analyzes YouTube podcast trends using Llama 3.1",
-    ],
+    summary:
+      "Built forecasting and analytics for an FMCG startup, from demand planning across 700+ SKUs that cut inventory costs by $5M+ a year to automated trend analysis and SEO keyword mining.",
   },
   {
     company: "DataNutts",
@@ -103,10 +97,8 @@ export const experiences = [
     role: "AI Engineer",
     period: "May 2024 – Aug 2024",
     location: "Grapevine, TX",
-    points: [
-      "Automated analysis of 2,000+ banking documents with an AI pipeline (Textract, GPT-4, Claude 3 Sonnet) feeding DynamoDB",
-      "Raised extraction accuracy from 78% to 94% with an LLM evaluation pipeline that scores every prompt change against a golden dataset",
-    ],
+    summary:
+      "Built document AI for financial services, extracting structured data from thousands of banking documents, and an evaluation pipeline that tracks accuracy on every prompt change.",
   },
   {
     company: "Infosys",
@@ -115,10 +107,8 @@ export const experiences = [
     role: "Data Engineer",
     period: "Oct 2021 – Jun 2023",
     location: "Bangalore, India",
-    points: [
-      "Led an 8-member team to automate ingestion from 10+ sources into a Synapse data warehouse with Azure Data Factory",
-      "Migrated 2TB+ from Data Lake Gen1 to Gen2 with zero data loss, and met a 10-minute SLA with PySpark and T-SQL workflows",
-    ],
+    summary:
+      "Built Azure data platforms while leading an 8-member team: pipelines from 10+ sources into Synapse, a 2TB+ data lake migration and automated CI/CD releases.",
   },
 ];
 
@@ -130,9 +120,8 @@ export const earlierExperiences = [
     logo: Spotle,
     role: "Data Analyst",
     period: "Jan 2021 – Feb 2021",
-    points: [
-      "Analyzed 120K+ COVID-19 lockdown tweets with NLP in Python and trained a sentiment classifier to 97% accuracy",
-    ],
+    summary:
+      "Analyzed 120K+ COVID-19 tweets with NLP and trained a sentiment classifier to 97% accuracy.",
   },
   {
     company: "Allsoft",
@@ -140,85 +129,74 @@ export const earlierExperiences = [
     logo: Allsoft,
     role: "AI Engineer",
     period: "May 2020 – Jul 2020",
-    points: [
-      "Built a COVID-19 detection proof of concept with OpenCV on 7,000+ medical images, reaching ~91% accuracy",
-    ],
+    summary:
+      "Built a COVID-19 detection proof of concept with OpenCV, reaching about 91% accuracy.",
   },
 ];
 
 // Ordered so the best-known projects show first; the rest sit behind "Show all".
 export const openSource = {
-  visible: 6,
+  visible: 3,
   orgs: ["AWS", "Redis", "Apache", "OpenSearch", "Google Cloud", "Nixtla", "FreeIPA", "Kapitan", "Tortoise ORM"],
   contributions: [
     {
       org: "aws/serverless-application-model",
       title: "Add EncryptionConfiguration support for AWS::Serverless::StateMachine",
-      date: "May 2026",
-      status: "open",
+      date: "May 2026",
       url: "https://github.com/aws/serverless-application-model/pull/3932",
     },
     {
       org: "redis/redis-om-python",
       title: "Fix sort_by on embedded model field paths",
-      date: "Oct 2026",
-      status: "open",
+      date: "Oct 2026",
       url: "https://github.com/redis/redis-om-python/pull/871",
     },
     {
       org: "apache/magpie",
       title: "Add --list-tags to print case tags with counts",
-      date: "May 2026",
-      status: "merged",
+      date: "May 2026",
       url: "https://github.com/apache/magpie/pull/404",
     },
     {
       org: "opensearch-project/documentation-website",
       title: "Unify Benchmark telemetry docs",
-      date: "May 2026",
-      status: "merged",
+      date: "May 2026",
       url: "https://github.com/opensearch-project/documentation-website/pull/12394",
     },
     {
       org: "kapicorp/kapitan",
       title: "Use register_resolver to avoid OmegaConf deprecation warning",
-      date: "Oct 2026",
-      status: "merged",
+      date: "Oct 2026",
       url: "https://github.com/kapicorp/kapitan/pull/1628",
     },
     {
       org: "tortoise/tortoise-orm",
       title: "Keep host, user and password from the query string when the URL authority is empty",
-      date: "Oct 2026",
-      status: "merged",
+      date: "Oct 2026",
       url: "https://github.com/tortoise/tortoise-orm/pull/2313",
     },
     {
       org: "GoogleCloudPlatform/cxas-scrapi",
       title: "Treat unrecognized run states as finished in evals",
-      date: "Oct 2026",
-      status: "open",
+      date: "Oct 2026",
       url: "https://github.com/GoogleCloudPlatform/cxas-scrapi/pull/496",
     },
     {
       org: "Nixtla/nixtla",
       title: "Reuse _sort_categorical_values in prepare_cross_validation",
-      date: "Oct 2026",
-      status: "open",
+      date: "Oct 2026",
       url: "https://github.com/Nixtla/nixtla/pull/920",
     },
     {
       org: "freeipa/ansible-freeipa",
       title: "Set LC_TIME to C in ansible_freeipa_module",
-      date: "Oct 2026",
-      status: "open",
+      date: "Oct 2026",
       url: "https://github.com/freeipa/ansible-freeipa/pull/1434",
     },
     {
       org: "O-X-L/ansible-opnsense",
       title: "Add data_ciphers and data_cipher_fallback fields to openvpn_client",
-      date: "Oct 2026",
-      status: "open",
+      date: "Oct 2026",
       url: "https://github.com/O-X-L/ansible-opnsense/pull/475",
     },
   ],
@@ -297,7 +275,7 @@ export const education = [
   {
     school: "Maharaja Agrasen Institute of Technology",
     degree: "B.Tech, Computer Science",
-    period: "",
+    period: "Jun 2017 – May 2021",
   },
 ];
 

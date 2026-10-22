@@ -16,8 +16,7 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.vanditgupta.com/" />
-    <meta name="theme-color" content="#f5f2ec" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#111317" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f5f2ec" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,8 +26,7 @@
     <script>
       (function () {
         try {
-          var saved = localStorage.getItem("theme");
-          var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var dark = localStorage.getItem("vg-theme") === "dark"; // light unless the visitor chose dark
           document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
         } catch (e) {}
       })();

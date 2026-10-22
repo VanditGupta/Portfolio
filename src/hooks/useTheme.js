@@ -1,4 +1,6 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
+
+const STORAGE_KEY = "vg-theme";
 
 const readTheme = () =>
   document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
@@ -6,16 +8,17 @@ const readTheme = () =>
 export const useTheme = () => {
   const [theme, setTheme] = useState(readTheme);
 
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
+  // The choice is saved only when the visitor toggles it, so first visits always start light.
+  const toggle = useCallback(() => {
+    const next = readTheme() === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    setTheme(next);
     try {
-      localStorage.setItem("theme", theme);
+      localStorage.setItem(STORAGE_KEY, next);
     } catch (e) {
       // Storage can be unavailable (private mode); the theme still applies for this visit.
     }
-  }, [theme]);
-
-  const toggle = useCallback(() => setTheme((t) => (t === "dark" ? "light" : "dark")), []);
+  }, []);
 
   return [theme, toggle];
 };
