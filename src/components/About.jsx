@@ -39,20 +39,27 @@ const About = () => {
             ))}
           </div>
 
-          <div className="mt-12 space-y-7">
-            {skills.map((skill, i) => (
-              <Reveal key={skill.group} delay={0.05 * i}>
-                <h3 className="mb-3 font-mono text-xs uppercase tracking-[0.18em] text-ink">{skill.group}</h3>
-                <ul className="flex flex-wrap gap-2">
-                  {skill.items.map((item) => (
-                    <li key={item} className="chip hover:border-accent hover:text-accent">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </Reveal>
-            ))}
-          </div>
+          <Reveal delay={0.1} className="mt-10">
+            <dl className="divide-y divide-line overflow-hidden rounded-2xl border border-line bg-surface">
+              {skills.map((skill) => (
+                <div key={skill.group} className="px-5 py-4">
+                  <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink">{skill.group}</dt>
+                  <dd className="mt-2.5">
+                    <ul className="flex flex-wrap gap-1.5">
+                      {skill.items.map((item) => (
+                        <li
+                          key={item}
+                          className="rounded-md bg-ink/[0.05] px-2.5 py-1 font-mono text-[11px] text-muted transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent/10 hover:text-accent"
+                        >
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </Reveal>
         </div>
       </div>
     </Section>
