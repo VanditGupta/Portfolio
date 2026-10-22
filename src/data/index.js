@@ -26,7 +26,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/vandit-gupta/",
   github: "https://github.com/VanditGupta",
   tagline:
-    "I build AI that works in the real world: reliable at scale, trusted by thousands, and built to last.",
+    "I build products that work reliably at scale, trusted by thousands, and built to last.",
 };
 
 export const navLinks = [
