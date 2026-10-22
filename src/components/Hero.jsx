@@ -3,6 +3,7 @@ import { animate, motion, useInView } from "framer-motion";
 import { ArrowDown, FileText, Github, Linkedin, Mail } from "lucide-react";
 
 import { profile, stats } from "../data";
+import NeuralNet from "./NeuralNet";
 import { ease } from "./Reveal";
 
 const CountUp = ({ prefix = "", value, suffix }) => {
@@ -73,6 +74,8 @@ const Hero = () => (
       transition={{ staggerChildren: 0.12, delayChildren: 0.2 }}
       className="mx-auto w-full max-w-[69rem]"
     >
+      <div className="lg:grid lg:grid-cols-12 lg:items-center lg:gap-10">
+        <div className="lg:col-span-7">
       <motion.p variants={item} className="eyebrow mb-8 flex items-center gap-3">
         <span className="relative flex h-2 w-2">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
@@ -121,6 +124,13 @@ const Hero = () => (
           ))}
         </div>
       </motion.div>
+
+        </div>
+
+        <motion.div variants={item} className="mt-12 hidden lg:col-span-5 lg:mt-0 lg:block">
+          <NeuralNet />
+        </motion.div>
+      </div>
 
       <motion.div
         variants={item}

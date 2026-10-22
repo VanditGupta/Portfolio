@@ -26,7 +26,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/vandit-gupta/",
   github: "https://github.com/VanditGupta",
   tagline:
-    "I build production AI systems: enterprise RAG search, voice coaching and agentic platforms, from LLM pipelines to the cloud underneath.",
+    "I build AI that works in the real world: reliable at scale, trusted by thousands, and built to last.",
 };
 
 export const navLinks = [
@@ -46,8 +46,8 @@ export const stats = [
 ];
 
 export const about = [
-  "I'm a Full Stack AI Engineer at New York Life, building enterprise RAG search, voice AI coaching and agentic systems, from LLM pipelines and APIs to cloud infrastructure and CI/CD.",
-  "I have 4+ years across Fortune 500 firms and startups, and a Northeastern MS in Computer Science. Before AI infrastructure, I built forecasting models and Azure data platforms.",
+  "I'm a Full Stack AI Engineer who turns ambitious ideas into production systems. Across 4+ years at Fortune 500 firms and startups, I've shipped AI that serves hundreds of thousands of people and saves millions, from the first prototype to the cloud infrastructure underneath.",
+  "Today at New York Life, I lead a team building search, coaching and agentic AI products on AWS. I hold an MS in Computer Science from Northeastern and contribute to open source across 10 organizations.",
 ];
 
 export const skills = [
