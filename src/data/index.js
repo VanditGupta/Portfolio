@@ -98,7 +98,7 @@ export const experiences = [
     period: "May 2024 – Aug 2024",
     location: "Grapevine, TX",
     summary:
-      "Built document AI for financial services, extracting structured data from thousands of banking documents, and an evaluation pipeline that tracks accuracy on every prompt change.",
+      "Built document AI on Azure for financial services, extracting structured data from 2,000+ banking documents with Document Intelligence and GPT-4, plus an evaluation pipeline that raised accuracy from 78% to 94%.",
   },
   {
     company: "Infosys",
