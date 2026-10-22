@@ -22,7 +22,7 @@ export const profile = {
   employer: "New York Life",
   location: "New York, NY",
   email: "vanditgupta22@gmail.com",
-  resume: "https://drive.google.com/file/d/1S882j4neNUQpwk9WsyAoek2nuDjKBPR1/view?usp=drive_link",
+  resume: "https://drive.google.com/file/d/1hXb1X6JfrYa5myO0suF111xpsUiyNU_C/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/vandit-gupta/",
   github: "https://github.com/VanditGupta",
   tagline:
