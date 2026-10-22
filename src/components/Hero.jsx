@@ -5,7 +5,7 @@ import { ArrowDown, FileText, Github, Linkedin, Mail } from "lucide-react";
 import { profile, stats } from "../data";
 import { ease } from "./Reveal";
 
-const CountUp = ({ value, suffix }) => {
+const CountUp = ({ prefix = "", value, suffix }) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
 
@@ -15,14 +15,15 @@ const CountUp = ({ value, suffix }) => {
       duration: 1.6,
       ease,
       onUpdate: (v) => {
-        if (ref.current) ref.current.textContent = `${Math.round(v)}${suffix}`;
+        if (ref.current) ref.current.textContent = `${prefix}${Math.round(v)}${suffix}`;
       },
     });
     return () => controls.stop();
-  }, [inView, value, suffix]);
+  }, [inView, prefix, value, suffix]);
 
   return (
     <span ref={ref}>
+      {prefix}
       {value}
       {suffix}
     </span>
@@ -121,22 +122,19 @@ const Hero = () => (
         </div>
       </motion.div>
 
-      <motion.dl
+      <motion.div
         variants={item}
         className="mt-16 grid grid-cols-2 gap-x-8 gap-y-8 border-t border-line pt-8 md:mt-24 md:grid-cols-4"
       >
         {stats.map((stat) => (
           <div key={stat.label}>
-            <dt className="sr-only">{stat.label}</dt>
-            <dd className="font-serif text-5xl md:text-6xl">
-              <CountUp value={stat.value} suffix={stat.suffix} />
-            </dd>
-            <p className="mt-1 text-sm text-muted" aria-hidden="true">
-              {stat.label}
+            <p className="font-serif text-5xl md:text-6xl">
+              <CountUp prefix={stat.prefix} value={stat.value} suffix={stat.suffix} />
             </p>
+            <p className="mt-1 text-sm text-muted">{stat.label}</p>
           </div>
         ))}
-      </motion.dl>
+      </motion.div>
     </motion.div>
 
     <motion.a

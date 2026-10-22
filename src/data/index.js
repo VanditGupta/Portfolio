@@ -40,8 +40,8 @@ export const navLinks = [
 
 export const stats = [
   { value: 4, suffix: "+", label: "years in industry" },
-  { value: 18, suffix: "K+", label: "agents using RAG search" },
-  { value: 30, suffix: "K+", label: "users on voice coaching" },
+  { value: 200, suffix: "K+", label: "people served by my work" },
+  { prefix: "$", value: 10, suffix: "M+", label: "in costs saved across projects" },
   { value: 4, suffix: "", label: "research publications" },
 ];
 
@@ -142,61 +142,61 @@ export const openSource = {
     {
       org: "aws/serverless-application-model",
       title: "Add EncryptionConfiguration support for AWS::Serverless::StateMachine",
-      date: "May 2026",
+      date: "May 2026",
       url: "https://github.com/aws/serverless-application-model/pull/3932",
     },
     {
       org: "redis/redis-om-python",
       title: "Fix sort_by on embedded model field paths",
-      date: "Oct 2026",
+      date: "Oct 2026",
       url: "https://github.com/redis/redis-om-python/pull/871",
     },
     {
       org: "apache/magpie",
       title: "Add --list-tags to print case tags with counts",
-      date: "May 2026",
+      date: "May 2026",
       url: "https://github.com/apache/magpie/pull/404",
     },
     {
       org: "opensearch-project/documentation-website",
       title: "Unify Benchmark telemetry docs",
-      date: "May 2026",
+      date: "May 2026",
       url: "https://github.com/opensearch-project/documentation-website/pull/12394",
     },
     {
       org: "kapicorp/kapitan",
       title: "Use register_resolver to avoid OmegaConf deprecation warning",
-      date: "Oct 2026",
+      date: "Oct 2026",
       url: "https://github.com/kapicorp/kapitan/pull/1628",
     },
     {
       org: "tortoise/tortoise-orm",
       title: "Keep host, user and password from the query string when the URL authority is empty",
-      date: "Oct 2026",
+      date: "Oct 2026",
       url: "https://github.com/tortoise/tortoise-orm/pull/2313",
     },
     {
       org: "GoogleCloudPlatform/cxas-scrapi",
       title: "Treat unrecognized run states as finished in evals",
-      date: "Oct 2026",
+      date: "Oct 2026",
       url: "https://github.com/GoogleCloudPlatform/cxas-scrapi/pull/496",
     },
     {
       org: "Nixtla/nixtla",
       title: "Reuse _sort_categorical_values in prepare_cross_validation",
-      date: "Oct 2026",
+      date: "Oct 2026",
       url: "https://github.com/Nixtla/nixtla/pull/920",
     },
     {
       org: "freeipa/ansible-freeipa",
       title: "Set LC_TIME to C in ansible_freeipa_module",
-      date: "Oct 2026",
+      date: "Oct 2026",
       url: "https://github.com/freeipa/ansible-freeipa/pull/1434",
     },
     {
       org: "O-X-L/ansible-opnsense",
       title: "Add data_ciphers and data_cipher_fallback fields to openvpn_client",
-      date: "Oct 2026",
+      date: "Oct 2026",
       url: "https://github.com/O-X-L/ansible-opnsense/pull/475",
     },
   ],
