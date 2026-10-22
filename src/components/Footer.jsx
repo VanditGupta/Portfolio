@@ -1,27 +1,14 @@
-import React from "react";
-import { githubLogo, linkedinLogo, mediumLogo } from '../assets'; // Update the path if necessary
+import { profile } from "../data";
 
-const Footer = () => {
-  return (
-    <footer className="bg-primary text-white py-6 text-center">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-center space-x-4 mb-4">
-        <a href="https://www.linkedin.com/in/vandit-gupta/" target="_blank" rel="noopener noreferrer">
-            <img src={linkedinLogo} alt="LinkedIn" className="h-6 w-6" />
-          </a>
-          <a href="https://github.com/VanditGupta" target="_blank" rel="noopener noreferrer">
-            <img src={githubLogo} alt="GitHub" className="h-6 w-6" />
-          </a>
-          <a href="https://medium.com/@vanditgupta22" target="_blank" rel="noopener noreferrer">
-            <img src={mediumLogo} alt="Medium" className="h-6 w-6" />
-          </a>
-        </div>
-        <p className="text-sm">
-          © {new Date().getFullYear()} Vandit Gupta. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  );
-};
+const Footer = () => (
+  <footer className="border-t border-line px-6 py-10">
+    <div className="mx-auto flex max-w-[69rem] flex-col items-center justify-between gap-4 text-sm text-muted sm:flex-row">
+      <p>
+        © {new Date().getFullYear()} {profile.name}
+      </p>
+      <p>Built with React, Tailwind and Framer Motion.</p>
+    </div>
+  </footer>
+);
 
 export default Footer;

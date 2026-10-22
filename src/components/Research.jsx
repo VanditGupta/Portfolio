@@ -1,126 +1,63 @@
-import React from "react";
-import Tilt from "react-tilt";
-import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 
-import { styles } from "../styles";
-import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { research_papers } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { research } from "../data";
+import { spotlightProps } from "../utils/spotlight";
+import Reveal from "./Reveal";
+import Section from "./Section";
 
-const ResearchCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-  authors,
-}) => {
-  return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-      >
-        <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
+const Research = () => (
+  <Section
+    id="research"
+    eyebrow="Research"
+    title={<>Published work<span className="text-accent">.</span></>}
+    intro={research.note}
+  >
+    <ul className="divide-y divide-line border-y border-line">
+      {research.papers.map((paper, i) => (
+        <Reveal as="li" key={paper.link} delay={0.05 * i}>
+          <a
+            {...spotlightProps}
+            href={paper.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="spotlight group -mx-4 grid gap-6 rounded-2xl px-4 py-9 md:grid-cols-12 md:items-center md:gap-8"
+          >
+            <span className="font-mono text-xs text-muted md:col-span-1">0{i + 1}</span>
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
+            <div className="md:col-span-8">
+              <h3 className="text-2xl leading-snug transition-colors duration-300 group-hover:text-accent md:text-3xl">
+                {paper.title}
+              </h3>
+              <p className="mt-3 leading-relaxed text-muted">{paper.description}</p>
+              <p className="mt-3 text-sm text-muted/80">{paper.authors}</p>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {paper.tags.map((tag) => (
+                  <li key={tag} className="chip">
+                    {tag}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-        </div>
 
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+            <div className="relative hidden aspect-[4/3] overflow-hidden rounded-xl border border-line md:col-span-3 md:block">
+              <img
+                src={paper.image}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                className={`h-full w-full grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0 ${
+                  paper.contain ? "bg-white object-contain p-3" : "object-cover"
+                }`}
+              />
+              <span className="absolute right-2 top-2 rounded-full bg-paper/90 p-1.5 text-ink opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <ArrowUpRight size={14} />
+              </span>
+            </div>
+          </a>
+        </Reveal>
+      ))}
+    </ul>
+  </Section>
+);
 
-          {/* Authors Section */}
-          <div className="flex items-center gap-2 mt-2">
-            {authors.map((author, idx) => (
-              <div key={idx} className="flex items-center gap-2">
-                <img
-                  src={author.image}
-                  alt={`Author-${author.name}`}
-                  className="w-8 h-8 rounded-full object-cover"
-                />
-                <a
-                  href={author.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white text-[14px]"
-                >
-                  {author.name}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
-  );
-};
-
-const Research = () => {
-  return (
-    <section>
-      {/* Invisible anchor element right before the heading */}
-      <div
-        id="research"
-        style={{ position: "relative", top: "-100px", visibility: "hidden" }}
-      ></div>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Research</p>
-        <h2 className={`${styles.sectionHeadText}`}>Papers</h2>
-      </motion.div>
-
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Following projects showcase my research work and demonstrate my
-          ability to explore innovative solutions and tackle complex problems.
-          Each project is briefly described with links to research papers and
-          related materials. It reflects my dedication to advancing knowledge in
-          my field of interest.
-        </motion.p>
-      </div>
-      <div className="mt-20 flex flex-wrap gap-7">
-        {research_papers.map((paper, index) => (
-          <ResearchCard key={`paper-${index}`} index={index} {...paper} />
-        ))}
-      </div>
-    </section>
-  );
-};
-
-export default SectionWrapper(Research, "");
+export default Research;

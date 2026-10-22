@@ -1,159 +1,129 @@
-import React, { useEffect, useState } from "react";
-import { HashLink } from "react-router-hash-link";
-import { styles } from "../styles";
-import { navLinks } from "../constants";
-import { logo, menu, close, githubLogo, linkedinLogo, mediumLogo } from "../assets";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { FileText, Menu, Moon, Sun, X } from "lucide-react";
+
+import { navLinks, profile } from "../data";
+import { useActiveSection } from "../hooks/useActiveSection";
+import { useTheme } from "../hooks/useTheme";
+
+const sectionIds = navLinks.map((link) => link.id);
+const mobileLinks = [...navLinks, { id: "resume", title: "Resume" }];
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [theme, toggleTheme] = useTheme();
+  const active = useActiveSection(sectionIds);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const ThemeIcon = theme === "dark" ? Sun : Moon;
+
   return (
-    <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+    <motion.header
+      initial={{ y: -24, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${
+        open
+          ? "border-line bg-paper"
+          : scrolled
+          ? "border-line bg-paper/85 backdrop-blur-md"
+          : "border-transparent"
       }`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <HashLink
-          to="/#home"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Vandit Gupta
-          </p>
-        </HashLink>
+      <nav className="mx-auto flex max-w-page items-center justify-between px-6 py-4" aria-label="Primary">
+        <a href="#top" className="font-serif text-2xl tracking-tight" aria-label="Back to top">
+          VG<span className="text-accent">.</span>
+        </a>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-            >
-              <HashLink
-                smooth
-                to={`/#${nav.id}`}
-                onClick={() => setActive(nav.title)}
+        <ul className="hidden items-center gap-1 md:flex">
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <a
+                href={`#${link.id}`}
+                className={`relative block rounded-full px-4 py-2 text-sm transition-colors duration-300 ${
+                  active === link.id ? "text-ink" : "text-muted hover:text-ink"
+                }`}
               >
-                {nav.title}
-              </HashLink>
+                {active === link.id && (
+                  <motion.span
+                    layoutId="nav-pill"
+                    className="absolute inset-0 -z-10 rounded-full bg-ink/[0.06]"
+                    transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                  />
+                )}
+                {link.title}
+              </a>
             </li>
           ))}
-          {/* Updated Social Icons */}
-          <li className="text-secondary">|</li>
-          <li className="flex items-center gap-1">
-            <a
-              href="https://www.linkedin.com/in/vandit-gupta/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={linkedinLogo} alt="LinkedIn" className="h-6 w-6" />
-            </a>
-          </li>
-          <li className="flex items-center gap-1">
-            <a
-              href="https://github.com/VanditGupta"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={githubLogo} alt="GitHub" className="h-6 w-6" />
-            </a>
-          </li>
-          <li className="flex items-center gap-1">
-            <a
-              href="https://medium.com/@vanditgupta22"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={mediumLogo} alt="Medium" className="h-6 w-6" />
-            </a>
-          </li>
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
-            onClick={() => setToggle(!toggle)}
-          />
-
-          {toggle && (
-            <div className="absolute top-full right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl black-gradient p-6 flex flex-col items-end gap-4">
-              {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] text-secondary`}
-                >
-                  <HashLink
-                    smooth
-                    to={`/#${nav.id}`}
-                    onClick={() => {
-                      setToggle(false);
-                      setActive(nav.title);
-                    }}
-                  >
-                    {nav.title}
-                  </HashLink>
-                </li>
-              ))}
-              <li className="font-poppins font-medium cursor-pointer text-[16px] text-secondary">
-                <a
-                  href="https://www.linkedin.com/in/vandit-gupta/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li className="font-poppins font-medium cursor-pointer text-[16px] text-secondary">
-                <a
-                  href="https://github.com/VanditGupta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li className="font-poppins font-medium cursor-pointer text-[16px] text-secondary">
-                <a
-                  href="https://medium.com/@vanditgupta22"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Medium
-                </a>
-              </li>
-            </div>
-          )}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={toggleTheme}
+            className="rounded-full p-2.5 text-muted transition-colors hover:bg-ink/[0.06] hover:text-ink"
+            aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+          >
+            <ThemeIcon size={18} />
+          </button>
+          <a
+            href={profile.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn hidden border border-ink/20 py-2 hover:bg-ink hover:text-paper md:inline-flex"
+          >
+            <FileText size={15} /> Resume
+          </a>
+          <button
+            onClick={() => setOpen((v) => !v)}
+            className="rounded-full p-2.5 text-ink md:hidden"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+          >
+            {open ? <X size={20} /> : <Menu size={20} />}
+          </button>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="overflow-hidden md:hidden"
+          >
+            <ul className="flex flex-col gap-1 px-6 pb-6">
+              {mobileLinks.map((link) => {
+                const external = link.id === "resume";
+                return (
+                  <li key={link.id}>
+                    <a
+                      href={external ? profile.resume : `#${link.id}`}
+                      target={external ? "_blank" : undefined}
+                      rel={external ? "noopener noreferrer" : undefined}
+                      onClick={() => setOpen(false)}
+                      className={`block rounded-lg px-3 py-3 font-serif text-2xl ${
+                        active === link.id ? "text-accent" : "text-ink"
+                      }`}
+                    >
+                      {link.title}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.header>
   );
 };
 

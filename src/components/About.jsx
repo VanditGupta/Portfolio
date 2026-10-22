@@ -1,95 +1,62 @@
-import React from "react";
-import Tilt from "react-tilt";
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { MapPin } from "lucide-react";
 
-import { styles } from "../styles";
-import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-import { profileImage } from "../assets";
-
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
-        <img
-          src={icon}
-          alt="web-development"
-          className="w-16 h-16 object-contain"
-        />
-
-        <h3 className="text-white text-[20px] font-bold text-center">
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+import portrait from "../assets/profile/vandit.jpg";
+import { about, profile, skills } from "../data";
+import Reveal from "./Reveal";
+import Section from "./Section";
 
 const About = () => {
+  const frame = useRef(null);
+  const { scrollYProgress } = useScroll({ target: frame, offset: ["start end", "end start"] });
+  const imageY = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+
   return (
-    <section>
-      <div
-        id="about"
-        style={{ position: "relative", top: "-100px", visibility: "hidden" }}
-      ></div>
-      <div className="flex md:flex-row flex-col items-center">
-        <motion.div variants={textVariant()} className="flex-1">
-          <p className={styles.sectionSubText}>Introduction</p>
-          <h2 className={styles.sectionHeadText}>Overview</h2>
-          <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
-            className="mt-4 text-secondary text-[17px] max-w-xl leading-[30px]"
-          >
-            Hello there! I'm a dedicated Data Scientist deeply engaged with
-            Cloud and Big Data tech, particularly Microsoft Azure. My journey
-            includes leading teams and enhancing data management and analytics
-            for Fortune 500 clients in education and public sectors as a Digital
-            Specialist Engineer at Infosys. Currently expanding my horizons with
-            a Master of Science in Computer Science at Northeastern University,
-            I've dived into Machine Learning, Data Analytics, and Computer
-            Vision. My research has led to four publications, focusing on text
-            classification, predictive analytics, and accident detection. I'm
-            all about solving real-world problems with image processing and
-            computer vision, driven by a blend of innovation and efficiency.
-            Let's connect and explore how we can innovate and revolutionize the
-            digital landscape together!
-          </motion.p>
-        </motion.div>
-        <div className="flex-1 flex flex-col items-center mt-10 md:mt-0">
-          <img
-            src={profileImage}
-            alt="Profile"
-            className="rounded-full w-48 h-48 object-cover"
-          />
-          <a
-            href="https://drive.google.com/file/d/1DW9FyokCV8jgSkZTFZZXQQl4ApYbj-Bk/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 bg-purple-500 text-white py-2 px-4 rounded-full text-center transition duration-300 ease-in-out hover:bg-purple-700"
-          >
-            View My Resume
-          </a>
+    <Section id="about" eyebrow="About" title={<>Building AI that holds up in production<span className="text-accent">.</span></>}>
+      <div className="grid gap-14 md:grid-cols-12 md:gap-12">
+        <Reveal className="md:col-span-5">
+          <div ref={frame} className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-line bg-surface">
+            <motion.img
+              src={portrait}
+              alt="Vandit Gupta on the Brooklyn Bridge with the Manhattan skyline behind"
+              style={{ y: imageY, scale: 1.2 }}
+              className="h-full w-full object-cover object-[50%_72%]"
+              loading="lazy"
+            />
+          </div>
+          <p className="mt-4 flex items-center gap-2 text-sm text-muted">
+            <MapPin size={14} className="text-accent" /> {profile.location}
+          </p>
+        </Reveal>
+
+        <div className="md:col-span-7">
+          <div className="space-y-5 text-lg leading-relaxed text-muted">
+            {about.map((paragraph, i) => (
+              <Reveal key={i} delay={0.05 * i} as="p">
+                {paragraph}
+              </Reveal>
+            ))}
+          </div>
+
+          <div className="mt-12 space-y-7">
+            {skills.map((skill, i) => (
+              <Reveal key={skill.group} delay={0.05 * i}>
+                <h3 className="mb-3 font-mono text-xs uppercase tracking-[0.18em] text-ink">{skill.group}</h3>
+                <ul className="flex flex-wrap gap-2">
+                  {skill.items.map((item) => (
+                    <li key={item} className="chip hover:border-accent hover:text-accent">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </div>
-
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
-    </section>
+    </Section>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default About;
