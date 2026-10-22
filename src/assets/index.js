@@ -24,6 +24,9 @@ import mongodb from "./tech/mongodb.png";
 import reactjs from "./tech/reactjs.png";
 import nodejs from "./tech/nodejs.png";
 
+import NewYorkLife from "./company/NewYorkLife.svg";
+import ForceFactor from "./company/ForceFactor.svg";
+import DataNutts from "./company/DataNutts.svg";
 import Infosys from "./company/Infosys.png";
 import Spotle from "./company/Spotle.png";
 import Allsoft from "./company/Allsoft.png";
@@ -72,6 +75,9 @@ export {
   opencv,
   python,
   tensorflow,
+  NewYorkLife,
+  ForceFactor,
+  DataNutts,
   Infosys,
   Spotle,
   Allsoft,
