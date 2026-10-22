@@ -30,7 +30,9 @@ const Card = ({ project, index }) => (
             src={project.image}
             alt={`${project.name} screenshot`}
             loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            className={`h-full w-full transition-transform duration-700 ease-out group-hover:scale-105 ${
+              project.contain ? "bg-white object-contain" : "object-cover object-top"
+            }`}
           />
         ) : (
           <div className="flex h-full w-full flex-col justify-between bg-gradient-to-br from-accent/20 via-accent/5 to-transparent p-6">
