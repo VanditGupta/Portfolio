@@ -266,6 +266,7 @@ export const research = {
     {
       title: "COVID-19 Detection using Deep Learning",
       description: "A deep learning approach to detecting COVID-19 from medical images.",
+      link: "http://ijmtst.com/volume6/issue12/81.IJMTST0612212.pdf",
     },
   ],
 };
@@ -289,6 +290,8 @@ export const recognition = [
   { title: "Rookie of the Quarter", detail: "Infosys" },
   { title: "Insta Award", detail: "Infosys" },
   { title: "ZS Campus Beats Challenge", detail: "Top 11-100 teams, 2020" },
+  { title: "Best Student in Computer Science", detail: "NC Jindal Public School, 12th grade" },
+  { title: "Academic Excellence Awards", detail: "Scholar's Badge and Certificate of Scholarship" },
 ];
 
 export const testimonials = [
