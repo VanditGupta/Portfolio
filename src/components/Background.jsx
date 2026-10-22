@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+
 import { education, recognition } from "../data";
 import Reveal from "./Reveal";
 import Section from "./Section";
@@ -17,7 +19,18 @@ const Background = () => (
         <ul className="divide-y divide-line border-y border-line">
           {education.map((item, i) => (
             <Reveal as="li" key={item.school} delay={0.06 * i} className="py-6">
-              <p className="font-serif text-2xl">{item.school}</p>
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-baseline gap-1.5 font-serif text-2xl decoration-line decoration-1 underline-offset-[6px] transition-colors duration-300 hover:text-accent hover:underline hover:decoration-accent"
+              >
+                {item.school}
+                <ArrowUpRight
+                  size={16}
+                  className="shrink-0 self-center text-muted transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent"
+                />
+              </a>
               <p className="mt-1 text-sm text-accent">
                 {item.degree}
                 {item.period && <span className="text-muted"> · {item.period}</span>}

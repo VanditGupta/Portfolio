@@ -23,6 +23,15 @@ const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("idle");
 
+  // If the form service is down, hand the visitor's message to their own email app.
+  const mailtoFallback = `mailto:${profile.email}?subject=${encodeURIComponent("Hello from your portfolio")}&body=${encodeURIComponent(
+    `Hi Vandit,
+
+${form.message}
+
+${form.name} (${form.email})`
+  )}`;
+
   const onChange = (event) => setForm({ ...form, [event.target.name]: event.target.value });
 
   const onSubmit = async (event) => {
@@ -106,7 +115,15 @@ const Contact = () => {
               </button>
               <p role="status" aria-live="polite" className={`text-sm ${status === "error" ? "text-red-600" : "text-accent"}`}>
                 {status === "sent" && "Thanks! I'll get back to you soon."}
-                {status === "error" && `Something went wrong. Please email ${profile.email} instead.`}
+                {status === "error" && (
+                  <>
+                    Couldn't send right now.{" "}
+                    <a href={mailtoFallback} className="underline underline-offset-4">
+                      Send it from your email app instead
+                    </a>
+                    .
+                  </>
+                )}
               </p>
             </div>
           </form>

@@ -44,8 +44,8 @@ const OpenSource = () => {
       <div className="grid gap-10 md:grid-cols-12 md:gap-12">
         <Reveal className="md:col-span-4">
           <p className="font-serif text-6xl">
-            {contributions.length}
-            <span className="ml-3 font-sans text-base text-muted">pull requests</span>
+            {orgs.length}
+            <span className="ml-3 font-sans text-base text-muted">organizations</span>
           </p>
           <ul className="mt-8 flex flex-wrap gap-2">
             {orgs.map((org) => (

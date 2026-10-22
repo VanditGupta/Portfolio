@@ -69,7 +69,7 @@ export const experiences = [
   },
   {
     company: "Northeastern University · DASH",
-    url: "https://www.northeastern.edu/",
+    url: "https://damore-mckim.northeastern.edu/dash/",
     logo: Northeastern,
     role: "Gen AI Engineer · Research Assistant",
     period: "Oct 2024 – Dec 2025",
@@ -116,7 +116,7 @@ export const experiences = [
 export const earlierExperiences = [
   {
     company: "Spotle.ai",
-    url: "https://spotle.ai/",
+    url: "https://www.linkedin.com/company/27215054/",
     logo: Spotle,
     role: "Data Analyst",
     period: "Jan 2021 – Feb 2021",
@@ -137,7 +137,7 @@ export const earlierExperiences = [
 // Ordered so the best-known projects show first; the rest sit behind "Show all".
 export const openSource = {
   visible: 3,
-  orgs: ["AWS", "Redis", "Apache", "OpenSearch", "Google Cloud", "Nixtla", "FreeIPA", "Kapitan", "Tortoise ORM"],
+  orgs: ["AWS", "Redis", "Apache", "OpenSearch", "Google Cloud", "Nixtla", "FreeIPA", "O-X-L", "Kapitan", "Tortoise ORM"],
   contributions: [
     {
       org: "aws/serverless-application-model",
@@ -263,17 +263,23 @@ export const research = {
       description: "Road accident detection with Mask R-CNN instance segmentation and Intersection over Union.",
       link: "http://ijmtst.com/volume7/issue01/15.IJMTST0612325.pdf",
     },
+    {
+      title: "COVID-19 Detection using Deep Learning",
+      description: "A deep learning approach to detecting COVID-19 from medical images.",
+    },
   ],
 };
 
 export const education = [
   {
     school: "Northeastern University",
+    url: "https://www.northeastern.edu/",
     degree: "MS, Computer Science",
     period: "Sep 2023 – Dec 2025",
   },
   {
     school: "Maharaja Agrasen Institute of Technology",
+    url: "https://www.mait.ac.in/",
     degree: "B.Tech, Computer Science",
     period: "Jun 2017 – May 2021",
   },
@@ -281,7 +287,7 @@ export const education = [
 
 export const recognition = [
   { title: "Rookie of the Quarter", detail: "Infosys" },
-  { title: "Insta Award", detail: "Infosys, for Azure data engineering" },
+  { title: "Insta Award", detail: "Infosys" },
   { title: "ZS Campus Beats Challenge", detail: "Top 11-100 teams, 2020" },
 ];
 
@@ -306,7 +312,7 @@ export const testimonials = [
     quote:
       "I wholeheartedly endorse Vandit for his outstanding academic and research contributions and his leadership in collaborative projects.",
     name: "Dr. Deepak Gupta",
-    title: "Assistant Professor, MAIT",
+    title: "Associate Professor, MAIT",
     image: deepak,
     link: "https://www.linkedin.com/in/deepak-gupta-90156685/",
   },
