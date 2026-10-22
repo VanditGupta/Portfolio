@@ -7,8 +7,17 @@ import { spotlightProps } from "../utils/spotlight";
 import Reveal, { ease } from "./Reveal";
 import Section from "./Section";
 
-const Logo = ({ src, name }) => (
-  <img src={src} alt="" aria-hidden="true" title={name} className="h-11 w-11 rounded-xl border border-line bg-white object-contain p-1" />
+// Logos sit on a white tile so they read in both themes; wordmarks get a wider tile.
+const Logo = ({ src, name, wide }) => (
+  <img
+    src={src}
+    alt=""
+    aria-hidden="true"
+    title={name}
+    className={`h-11 shrink-0 rounded-xl border border-line bg-white object-contain ${
+      wide ? "w-28 px-2 py-1.5" : "w-11 p-1"
+    }`}
+  />
 );
 
 const Role = ({ job }) => (
@@ -23,7 +32,7 @@ const Role = ({ job }) => (
 
     <div className="md:col-span-9">
       <div className="flex items-center gap-4">
-        <Logo src={job.logo} name={job.company} />
+        <Logo src={job.logo} name={job.company} wide={job.wideLogo} />
         <div>
           <h3 className="text-2xl leading-tight md:text-3xl">{job.role}</h3>
           <a

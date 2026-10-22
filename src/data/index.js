@@ -1,7 +1,7 @@
 import NewYorkLife from "../assets/company/NewYorkLife.svg";
-import Northeastern from "../assets/company/Northeastern.svg";
+import Northeastern from "../assets/company/Northeastern.png";
 import ForceFactor from "../assets/company/ForceFactor.svg";
-import DataNutts from "../assets/company/DataNutts.svg";
+import DataNutts from "../assets/company/DataNutts.png";
 import Infosys from "../assets/company/Infosys.png";
 import Spotle from "../assets/company/Spotle.png";
 import Allsoft from "../assets/company/Allsoft.png";
@@ -108,6 +108,7 @@ export const experiences = [
     company: "Force Factor",
     url: "https://www.forcefactor.com/",
     logo: ForceFactor,
+    wideLogo: true,
     role: "AI Engineer",
     period: "Jan 2025 – Apr 2025",
     location: "Boston, MA",
@@ -122,6 +123,7 @@ export const experiences = [
     company: "DataNutts",
     url: "https://www.datanutts.com/",
     logo: DataNutts,
+    wideLogo: true,
     role: "AI Engineer",
     period: "May 2024 – Aug 2024",
     location: "Grapevine, TX",
@@ -173,30 +175,76 @@ export const earlierExperiences = [
 ];
 
 export const openSource = {
-  orgs: ["AWS", "Redis", "Apache", "OpenSearch", "Kapitan", "Tortoise ORM"],
+  orgs: ["AWS", "Redis", "Apache", "OpenSearch", "Google Cloud", "Nixtla", "FreeIPA", "Kapitan", "Tortoise ORM"],
   contributions: [
+    {
+      org: "GoogleCloudPlatform/cxas-scrapi",
+      title: "Treat unrecognized run states as finished in evals",
+      date: "Oct 2026",
+      status: "open",
+      url: "https://github.com/GoogleCloudPlatform/cxas-scrapi/pull/496",
+    },
+    {
+      org: "redis/redis-om-python",
+      title: "Fix sort_by on embedded model field paths",
+      date: "Oct 2026",
+      status: "open",
+      url: "https://github.com/redis/redis-om-python/pull/871",
+    },
+    {
+      org: "freeipa/ansible-freeipa",
+      title: "Set LC_TIME to C in ansible_freeipa_module",
+      date: "Oct 2026",
+      status: "open",
+      url: "https://github.com/freeipa/ansible-freeipa/pull/1434",
+    },
     {
       org: "kapicorp/kapitan",
       title: "Use register_resolver to avoid OmegaConf deprecation warning",
       date: "Oct 2026",
+      status: "merged",
       url: "https://github.com/kapicorp/kapitan/pull/1628",
+    },
+    {
+      org: "Nixtla/nixtla",
+      title: "Reuse _sort_categorical_values in prepare_cross_validation",
+      date: "Oct 2026",
+      status: "open",
+      url: "https://github.com/Nixtla/nixtla/pull/920",
+    },
+    {
+      org: "O-X-L/ansible-opnsense",
+      title: "Add data_ciphers and data_cipher_fallback fields to openvpn_client",
+      date: "Oct 2026",
+      status: "open",
+      url: "https://github.com/O-X-L/ansible-opnsense/pull/475",
     },
     {
       org: "tortoise/tortoise-orm",
       title: "Keep host, user and password from the query string when the URL authority is empty",
       date: "Oct 2026",
+      status: "merged",
       url: "https://github.com/tortoise/tortoise-orm/pull/2313",
     },
     {
       org: "apache/magpie",
       title: "Add --list-tags to print case tags with counts",
       date: "May 2026",
+      status: "merged",
       url: "https://github.com/apache/magpie/pull/404",
+    },
+    {
+      org: "aws/serverless-application-model",
+      title: "Add EncryptionConfiguration support for AWS::Serverless::StateMachine",
+      date: "May 2026",
+      status: "open",
+      url: "https://github.com/aws/serverless-application-model/pull/3932",
     },
     {
       org: "opensearch-project/documentation-website",
       title: "Unify Benchmark telemetry docs",
       date: "May 2026",
+      status: "merged",
       url: "https://github.com/opensearch-project/documentation-website/pull/12394",
     },
   ],
